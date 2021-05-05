@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+        <li><a href="pages/account.html">Account</a></li>
+    </ul>
+    <div class="row">
+        @Html.Partial("LeftSide")
+        <div id="content" class="col-sm-9">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <h3>My Account</h3>
+                    <ul class="list-unstyled my-account">
+                        <li><a href="pages/account.html">Edit your account information</a></li>
+                        <li><a href="pages/account.html">Change your password</a></li>
+                        <li><a href="pages/account.html">Modify your address book entries</a></li>
+                        <li><a href="pages/wishlist.html">Modify your wish list</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <h3>My Orders</h3>
+                    <ul class="list-unstyled my-account">
+                        <li><a href="pages/account.html">View your order history</a></li>
+                        <li><a href="pages/account.html">Downloads</a></li>
+                        <li><a href="pages/account.html">Your Reward Points</a></li>
+                        <li><a href="pages/account.html">View your return requests</a></li>
+                        <li><a href="pages/account.html">Your Transactions</a></li>
+                        <li><a href="pages/account.html">Recurring payments</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h3>Newsletter</h3>
+                <ul class="list-unstyled my-account">
+                    <li><a href="pages/account.html">Subscribe / unsubscribe to newsletter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

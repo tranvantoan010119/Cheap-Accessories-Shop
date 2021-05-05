@@ -1,0 +1,12 @@
+﻿@model List<Services.ViewModels.ProductViewModel>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td><img src="@UrlHandler.ResolveUrl(item.Avatar)" alt="@item.Name" style="width:45px; height:45px;" /></td>
+        <td>@item.Code</td>
+        <td>@item.Name</td>
+        <td>@item.Quantity</td>
+    </tr>
+}
+

@@ -1,0 +1,45 @@
+﻿@using Common
+@model List<Services.Models.Product>
+    @{ 
+        var imgPath = Customers.Ultilities.Constant.AdminAddress;
+    }
+@if (Model != null && Model.Count > 0)
+{
+    <div class="box-content">
+        <div class="box-product">
+            @foreach (var item in Model)
+            {
+                <div class="box_item">
+                    <div class="image"><a href="/Product/Detail/@item.Id"><img src="@imgPath@item.Avatar" alt="@item.Name" class="img-responsive" /></a></div>
+                    <div class="prod-detail">
+                        <div class="name"><a href="/Product/Detail/@item.Id">@item.Name</a></div>
+                        <p class="price">
+                            @if (item.SaleOff > 0)
+                            {
+                                if (item.StartDate != null && item.EndDate != null && DateTime.Now >= item.StartDate && DateTime.Now <= item.EndDate)
+                                {
+                                    <span class="price-new">@item.SaleOff.labelFormatCurrency()</span>
+                                        <span class="price-old">@item.Price.labelFormatCurrency()</span>
+                                }
+                                else
+                                {
+                                    <span class="price-new">@item.Price.labelFormatCurrency()</span>
+                                }
+                            }
+                            else
+                            {
+                                <span class="price-new">@item.Price.labelFormatCurrency()</span>
+                            }
+                        </p>
+                    </div>
+                    <div class="button-group">
+                        <a href="pages/cart.html"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Add to Cart</span></a>
+                        <a href="pages/wishlist.html" data-toggle="tooltip" title="Add to Wish List"><i class="fa fa-heart"></i></a>
+                        <a href="pages/compare.html" data-toggle="tooltip" title="Compare this Product"><i class="fa fa-exchange"></i></a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+

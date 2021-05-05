@@ -1,0 +1,86 @@
+﻿@using Common
+    @model List<Services.ViewModels.CartItemViewModel>
+    @{
+        var imgPath = Customers.Ultilities.Constant.AdminAddress;
+        decimal total = 0;
+        decimal lastestTotal = 0;
+    }
+    <h1 class="title">Giỏ hàng của bạn      </h1>
+    @if (Model != null && Model.Count > 0)
+            {
+        <form>
+            <div class="cart-info">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td class="image" colspan="2">Sản phẩm</td>
+                            <td class="product-price">Giá</td>
+                            <td class="discount-price">Giá khuyến mại</td>
+                            <td class="quantity">Số lượng</td>
+                            <td class="total">Tổng</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr id="row_@item.productId">
+                                <td class="image">
+                                    <a href="/Product/Detail/@item.productId"><img src="@imgPath@item.avatar" alt="@item.productName" class="img-thumbnail" /></a>
+                                </td>
+                                <td class="name">
+                                    <a href="/Product/Detail/@item.productId">@item.productName</a>
+                                    <br />
+                                    <small>Mã sản phẩm: @item.productCode</small>
+                                </td>
+                                <td class="product-price">@item.Amount.labelFormatCurrency()</td>
+                                <td class="discount-price">@item.LastAmount.labelFormatCurrency()</td>
+                                <td class="quantity">
+                                    <div class="input-group btn-block" style="max-width: 200px;">
+                                        <input type="text" name="quantity" value="@item.quantity" size="1" id="txtQuantity_@item.productId" class="form-control" />
+                                        <span class="input-group-btn">
+                                            <button type="button" title="Update" data-productid="@item.productId" data-quantity="@item.quantity" class="btn-update"><i class="fa fa-refresh"></i></button>
+                                            <button type="button" title="Remove" data-productid="@item.productId" class="btn-remove"><i class="fa fa-times"></i></button>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="total">@((item.LastAmount * item.quantity).labelFormatCurrency())</td>
+                                @{
+                                    lastestTotal += item.LastAmount * item.quantity;
+                                    total += item.Amount * item.quantity;
+                                }
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </form>
+        <div class="cart-total">
+            <table>
+                <tr>
+                    <td class="left">Tạm tính:</td>
+                    <td class="right">@total.labelFormatCurrency()</td>
+                </tr>
+                <tr>
+                    <td class="left">Tiết kiệm</td>
+                    <td class="right">-@((total - lastestTotal).labelFormatCurrency())</td>
+                </tr>
+                @*<tr>
+                        <td class="left">VAT (20%):</td>
+                        <td class="right">$101.60</td>
+                    </tr>*@
+                <tr>
+                    <td class="left">Tổng tiền:</td>
+                    <td class="right">@lastestTotal.labelFormatCurrency()</td>
+                </tr>
+            </table>
+        </div>
+        <div class="buttons">
+            <div><a href="/CheckOut/Step1" class="btn btn-checkout" style="float:right">Thanh toán</a></div>
+            <div><a href="/" class="btn btn-default">Tiếp tục mua hàng</a></div>
+        </div>
+            }
+    else
+    {
+        <p class="text_next_choice">Không tìm thấy sản phẩm nào trong giỏ hàng.</p>
+    }

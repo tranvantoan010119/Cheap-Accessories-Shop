@@ -1,0 +1,14 @@
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Common\bin\Release\Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Common\bin\Release\Common.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Common\obj\Release\Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Common\obj\Release\Common.pdb
+C:\Users\Administrator\Desktop\VatTuHaTay\Common\bin\Release\Common.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Common\bin\Release\Common.pdb
+C:\Users\Administrator\Desktop\VatTuHaTay\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VatTuHaTay\Common\obj\Release\Common.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Common\obj\Release\Common.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Common\bin\Release\Common.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Common\bin\Release\Common.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Common\obj\Release\Common.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Common\obj\Release\Common.pdb

@@ -1,0 +1,46 @@
+﻿@using Common
+@model IEnumerable<Services.Models.Order>
+
+@{
+    ViewBag.Title = "TransactionHistory";
+}
+
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="/"><i class="fa fa-home"></i></a></li>
+        <li><a href="#">Lịch sử đơn hàng</a></li>
+    </ul>
+    <div class="row">
+        <div id="content" class="col-sm-12">
+            <div class="wishlist-info">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td class="model">Mã đơn hàng</td>
+                            <td class="price">Tình trạng</td>
+                            <td class="action">Tổng tiền</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="model"><a style="color:#337ab7;font-size:16px;" href="/CheckOut/ViewOrder?orderId=@item.Id&email=@item.Email">@item.Id</a></td>
+                                <td class="model">@item.Status.getOrderStatusName()</td>
+                                <td class="price">
+                                    <div class="price">
+                                        @item.TotalAmount.GetValueOrDefault().labelFormatCurrency()
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+
+

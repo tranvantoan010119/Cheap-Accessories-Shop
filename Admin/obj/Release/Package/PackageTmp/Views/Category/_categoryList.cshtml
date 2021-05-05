@@ -1,0 +1,12 @@
+﻿@model List<Services.ViewModels.CategoryViewModel>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>@item.Name</td>
+        <td>@item.ParentName</td>
+        <td>@item.Sort</td>
+        <td><input type="checkbox" class="cbStatus" @(item.Published == true ? "checked" : "") data-id="@item.Id" /></td>
+        <td><a href="/Category/Edit/@item.Id">Sửa</a> | <a href="#" class="cate_delete" data-id="@item.Id">Xóa</a></td>
+    </tr>
+}

@@ -1,0 +1,184 @@
+﻿@using Common
+@using Customers.Ultilities
+@model Services.Models.News
+
+@{
+    ViewBag.Title = Model.Title;
+    var imgPath = Constant.AdminAddress;
+    Model.Detail = Model.Detail.Replace("src=\"/Images/", "src=\"" + imgPath + "/Images/");
+}
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="/"><i class="fa fa-home"></i></a></li>
+        <li><a href="/News">Tin tức</a></li>
+        <li><a href="#">@Model.Title</a></li>
+    </ul>
+    <div class="row">
+        <div id="column-left" class="col-sm-3 hidden-xs">
+            @Html.Partial("/Views/News/LeftSide.cshtml")
+        </div>
+        <div id="content" class="col-sm-9">
+            <div class="boss-article-detail">
+                <span class="article-title-boss">@Model.Title</span>
+                <div class="date-article">
+                    <div class="time-stamp">
+                        @Model.CreatedDate.Value.convertDateToString()
+                    </div>
+                </div>
+                <div class="article-content">
+                    <p>@Html.Raw(Model.Detail)</p>
+                </div>
+                <div class="date-article">
+                    <div class="date-post">
+                        <span class="post-by"> Người đăng: <span>Admin</span></span>
+                    </div>
+                </div>
+                @*<div class="article-related">
+                    <h2>Related Articles</h2>
+                    <div>
+                        <div id="article_related">
+                            <div>
+                                <div class="article-image">
+                                    <a href="pages/article.html"><img src="/Assets/images/catalog/bossblog/h3.jpg" alt="Nisl cursus sollicitudin" title="Nisl cursus sollicitudin" class="img-responsive" /></a>
+                                </div>
+                                <div class="article-detail">
+                                    <div class="article-name"><a href="pages/article.html">Nisl cursus sollicitudin</a></div>
+                                    <div class="time-stamp">
+                                        <small>Friday, Nov 23, 2012</small>
+                                    </div>
+                                    <div class="article-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis lectus tristique justo porta molestie</div>
+                                    <div class="article-footer">
+                                        <span class="post-by"> Post by <span>Admin</span></span>
+                                        <span class="separator">|</span>
+                                        <span class="comment-count"><span>4</span> comment(s)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="article-image">
+                                    <a href="pages/article.html"><img src="/Assets/images/catalog/bossblog/h7.jpg" alt="Voluptatem accusantium laudan" title="Voluptatem accusantium laudan" class="img-responsive" /></a>
+                                </div>
+                                <div class="article-detail">
+                                    <div class="article-name"><a href="pages/article.html">Voluptatem accusantium laudan</a></div>
+                                    <div class="time-stamp">
+                                        <small>Friday, Nov 23, 2012</small>
+                                    </div>
+                                    <div class="article-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis lectus tristique justo porta molestie.</div>
+                                    <div class="article-footer">
+                                        <span class="post-by"> Post by <span>Admin</span></span>
+                                        <span class="separator">|</span>
+                                        <span class="comment-count"><span>4</span> comment(s)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="article-image">
+                                    <a href="pages/article.html"><img src="/Assets/images/catalog/bossblog/h4.jpg" alt="Nulla eu velit a enim" title="Nulla eu velit a enim" class="img-responsive" /></a>
+                                </div>
+                                <div class="article-detail">
+                                    <div class="article-name"><a href="pages/article.html">Nulla eu velit a enim</a></div>
+                                    <div class="time-stamp">
+                                        <small>Friday, Nov 23, 2012</small>
+                                    </div>
+                                    <div class="article-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis lectus tristique justo porta molestie.</div>
+                                    <div class="article-footer">
+                                        <span class="post-by"> Post by <span>Admin</span></span>
+                                        <span class="separator">|</span>
+                                        <span class="comment-count"><span>4</span> comment(s)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="article-image">
+                                    <a href="pages/article.html"><img src="/Assets/images/catalog/bossblog/h2.jpg" alt="Donec a interdum ligula" title="Donec a interdum ligula" class="img-responsive" /></a>
+                                </div>
+                                <div class="article-detail">
+                                    <div class="article-name"><a href="pages/article.html">Donec a interdum ligula</a></div>
+                                    <div class="time-stamp">
+                                        <small>Friday, Nov 23, 2012</small>
+                                    </div>
+                                    <div class="article-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis lectus tristique justo porta molestie</div>
+                                    <div class="article-footer">
+                                        <span class="post-by"> Post by <span>Admin</span></span>
+                                        <span class="separator">|</span>
+                                        <span class="comment-count"><span>4</span> comment(s)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="article-image">
+                                    <a href="pages/article.html"><img src="/Assets/images/catalog/bossblog/h6.jpg" alt="Voluptatem accusantium" title="Voluptatem accusantium" class="img-responsive" /></a>
+                                </div>
+                                <div class="article-detail">
+                                    <div class="article-name"><a href="pages/article.html">Voluptatem accusantium</a></div>
+                                    <div class="time-stamp">
+                                        <small>Thursday, Jan 1, 1970</small>
+                                    </div>
+                                    <div class="article-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis lectus tristique justo porta molestie.</div>
+                                    <div class="article-footer">
+                                        <span class="post-by"> Post by <span>Admin</span></span>
+                                        <span class="separator">|</span>
+                                        <span class="comment-count"><span>4</span> comment(s)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a id="prev_ar_related" class="prev nav_thumb" style="display:none;" href="javascript:void(0)" title="prev"><i title="Previous" class="fa fa-angle-left"></i></a>
+                        <a id="next_ar_related" class="next nav_thumb" style="display:none;" href="javascript:void(0)" title="next"><i title="Next" class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>*@
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/Assets/javascript/bossthemes/touchSwipe.min.js"></script>
+<script type="text/javascript" src="/Assets/javascript/bossthemes/carouFredSel-6.2.0.js"></script>
+<script type="text/javascript">
+<!--
+$(window).load(function(){
+	$('#product_related').carouFredSel({
+        auto: false,
+        responsive: true,
+        width: '100%',
+        prev: '#prev_related',
+        next: '#next_related',
+        swipe: {
+        onTouch : true
+        },
+        items: {
+            width: 250,
+			height: 'auto',
+            visible: {
+            min: 1,
+            max: 3
+            }
+        },
+        scroll: {
+            direction : 'left',    //  The direction of the transition.
+            duration  : 1000   //  The duration of the transition.
+        }
+	});
+	$('#article_related').carouFredSel({
+        auto: false,
+        responsive: true,
+        width: '100%',
+        prev: '#prev_ar_related',
+        next: '#next_ar_related',
+        swipe: {
+        onTouch : false
+        },
+        items: {
+            width: 280,
+			height: 'auto',
+            visible: {
+            min: 1,
+            max: 3
+            }
+        },
+        scroll: {
+            direction : 'left',    //  The direction of the transition.
+            duration  : 1000   //  The duration of the transition.
+        }
+	});
+});
+//--></script> 

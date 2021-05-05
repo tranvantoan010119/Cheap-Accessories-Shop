@@ -1,0 +1,388 @@
+﻿@using Common
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]><html dir="ltr" lang="en" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html dir="ltr" lang="en" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html dir="ltr" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="My Store" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="/Assets/images/catalog/bt_leather/Leather_Favicon.jpg" rel="icon" />
+    <script src="/Assets/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <link href="/Assets/javascript/bossthemes/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <script src="/Assets/javascript/bossthemes/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <link href="/Assets/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="/Assets/css/stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/Assets/css/boss_megamenu.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/css/bt_stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/css/bossblog.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/css/responsive.css" />
+    <!--[if IE 9]>
+      <link rel="stylesheet" type="text/css" href="/Assets/css/bossthemes/ie9.css" />
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/Assets/css/cs.animate.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/css/jquery.jgrowl.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/css/bootstrap-select.css" />
+    <link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/Assets/javascript/bossthemes/video/video.css">
+    <link href="/Assets/css/boss_revolutionslider/css/settings.css" type="text/css" rel="stylesheet" media="screen" />
+    <link href="~/Assets/Plugin/ToastMessage/build/toastr.min.css" rel="stylesheet" />
+
+    <link href="~/Assets/css/myCSS.css" rel="stylesheet" />
+    @RenderSection("css", false)
+    <style>
+        .black-normal {
+            background-color: #2c2c2c;
+        }
+
+        .black-gray {
+            background-color: #212121;
+        }
+
+        .bt-featured-pro .box-heading.htabs a:hover, .bt-featured-pro .box-heading.htabs a.selected {
+            background-color: #212121;
+        }
+
+        .bt-featured-pro .box-heading.htabs a:hover:after, .bt-featured-pro .box-heading.htabs a.selected:after {
+            border-color: #212121 transparent;
+        }
+
+        #search input.input-lg {
+            background-color: #212121;
+        }
+
+        .btn-cart, .button_cart, .boss-newletter a.btn, .btn.btn-default:hover, button.btn-default:hover, .btn-remove:hover, button.btn-update:hover, .btn.btn-primary:hover, .btn.btn-checkout {
+            background-color: #2c2c2c;
+            border-color: #2c2c2c;
+        }
+
+        .mega-menu > ul.nav > li:hover {
+            background-color: #212121;
+        }
+    </style>
+    <script src="/Assets/javascript/bossthemes/common.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/Assets/javascript/bossthemes/cs.bossthemes.js"></script>
+    <script src="/Assets/javascript/bossthemes/carouFredSel-6.2.0.js" type="text/javascript"></script>
+    <script src="/Assets/javascript/bossthemes/tabs.js" type="text/javascript"></script>
+    <script src="/Assets/javascript/bossthemes/jquery.tools.min.js" type="text/javascript"></script>
+    <script src="/Assets/javascript/bossthemes/jquery.revolution.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/Assets/javascript/bossthemes/jquery.appear.js"></script>
+    <script type="text/javascript" src="/Assets/javascript/bossthemes/jquery.smoothscroll.js"></script>
+    <script src="/Assets/javascript/bossthemes/jquery.jgrowl.js" type="text/javascript"></script>
+    <script src="/Assets/javascript/bossthemes/jquery.DEPreLoad.js" type="text/javascript"></script>
+    <script src="/Assets/javascript/bossthemes/bootstrap-select.js" type="text/javascript"></script>
+    <script type="text/javascript">
+<!--
+$(document).ready(function() {
+	//var loader = $("body").DEPreLoad({
+	//	OnStep: function(percent) {
+	//		$("#depreload .cs_perc").text(percent + "%");
+	//	},
+	//	OnComplete: function() {
+	//		setTimeout(function(){
+	//			$("#depreload").css('display','none');
+	//		}, 200);
+	//	}
+	//});
+});
+//--></script>
+    <script type="text/javascript">
+<!--
+$(window).scroll(function() {
+	var height_header = $('#bt_header').height();
+	if($(window).scrollTop() > height_header) {
+
+		$('.bt-comb').addClass('bt-menu-fixed animated');
+	} else {
+		$('.bt-comb').removeClass('bt-menu-fixed animated');
+	}
+});
+//--></script>
+
+    <script src="~/Assets/Plugin/ToastMessage/build/toastr.min.js"></script>
+    <script src="/Assets/controller/base/base.js"></script>
+</head>
+<body class="information-contact bt-wide-boxed">
+    <!-- Loader -->
+    @*<div id="depreload" style="background-color:#fbf3e6;">
+            <div class="cs_bigloader">
+                <div class="cs_loader_line">
+                    <div class="loader_tophalf"></div>
+                    <div class="loader_inner"></div>
+                    <div class="loader_bottomhalf"></div>
+                    <div class="loader_button"></div>
+                </div>
+                <div class="cs_loader_logo">
+                    <img src="/Assets/images/catalog/bt_leather/logo.png" title="Opencart Leather Store" alt="Opencart Leather Store" class="logo" />
+                </div>
+                <div class="cs_perc"></div>
+            </div>
+        </div>*@
+
+    <img src="~/Assets/Plugin/Loading/hourglass.svg" class="hide" id="imgLoading" />
+    <div id="bt_container" class="bt-wide-boxed">
+        <!--header-->
+        <div id="bt_header" class="">
+            <nav id="top">
+                <div class="container">
+                    <div class="row">
+                        <div class="bt-block-header pull-left col-sm-4 col-xs-12">
+                            @{
+                                if (Session[Shared.Session_Customer] != null)
+                                {
+                                    var customer = (Services.ViewModels.CustomerViewModel)Session[Shared.Session_Customer];
+                                    <input type="hidden" value="@customer.Id" id="customerId" />
+                                    <span>Xin chào @(String.IsNullOrEmpty(customer.FullName) ? customer.Email.Substring(0, customer.Email.LastIndexOf('@')) : customer.FullName )</span>
+                                }
+                                else
+                                {
+                                    <span>Xin chào, bạn có thể  <a href="/dang-nhap">đăng nhập</a> hoặc <a href="/dang-ky">tạo tài khoản</a></span>
+                                }
+                            }
+                        </div>
+
+                        <div class="language-currency pull-right col-sm-8 col-xs-12">
+                            <div id="cart" class="btn-group pull-right">
+                                <button type="button" class="btn btn-dropdown-cart pull-right"><i class="fa fa-shopping-cart"></i> <span id="cart-total">Giỏ hàng</span></button>
+
+                            </div>
+                            @*<ul class="list-inline pull-right">
+                                    <li><a title="Đăng nhập" href="/dang-nhap"><i class="fa fa-user"></i></a></li>
+                                    <li><a href="/yeu-thich" id="wishlist-total" title="Yêu thích"><i class="fa fa-heart"></i></a></li>
+                                </ul>*@
+                            @if (Session[Shared.Session_Customer] != null)
+                            {
+                                <div class="cur-lang">
+                                    <div class="pull-right">
+                                        <form id="currency">
+                                            <div class="btn-group">
+                                                <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">Tài khoản</button>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <button id="btn-transaction-history" class="currency-select btn btn-link btn-block" type="button" name="EUR">
+                                                            <span class="text-left">Lịch sử đơn hàng</span>
+                                                        </button>
+                                                    </li>
+
+                                                    <li>
+                                                        <button id="btn-logout" class="currency-select btn btn-link btn-block" type="button" name="USD">
+                                                            <span class="text-left">Đăng xuất</span>
+                                                        </button>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                            <input type="hidden" name="code" value="" />
+                                            <input type="hidden" name="redirect" value="http://demo.bossthemes.com/html/leather/index.html" />
+                                        </form>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="pull-left col-sm-6">
+                            <div id="logo" class="logo">
+                                <a href="/"><img src="~/Assets/images/Screenshot_44.png" class="img-responsive" /></a>
+                            </div>
+                        </div>
+                        <div class="list-links pull-right col-sm-6">
+                            <div class="bt-menu-logo">
+                                <ul>
+                                    <li><a href="/CheckOut/SearchOrder">Tra cứu đơn hàng</a></li>
+                                    <li><a href="/News">Tin tức</a></li>
+                                    <li><a href="/Home/ContactUs">Liên hệ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container"><div class="row"><div class="bt-content-menu"></div></div></div>
+            <div class="bt-comb fadeInDown black-normal">
+                <div class="container">
+                    <div class="row">
+                        @{Html.RenderAction("_Menu", "Home");}
+                        <div class="col-sm-3 pull-right bt-search">
+                            <div id="search" class="input-group pull-right">
+                                <input type="text" id="txtSearch" name="search" value="" placeholder="Tìm kiếm" class="form-control input-lg black-gray" />
+                                <a title="search" class="btn btn-search" href="#"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End #bt_header -->
+        @RenderBody()
+        <!--footer-->
+        <div id="bt_footer_container">
+            <footer id="bt_footer">
+                <div class="container">
+                    <div class="footer_column">
+                        <div class="row">
+                            <div class="column left col-sm-7 col-xs-12 not-animated" data-animate="fadeInUp" data-delay="200">
+                                <div class="column col-sm-5 col-xs-12 not-animated" data-animate="fadeInUp" data-delay="300">
+                                    <div class="footer-contact">
+                                        <h3>Thông tin liên hệ</h3>
+                                        <div class="contact-us not-animated" data-animate="fadeInUp" data-delay="300">
+                                            <div class="address"><i class="fa fa-map-marker"></i><span>Số 2 Thái Hà, Đống Đa, Hà Nội</span></div>
+                                            <div class="email">
+                                                <i class="fa fa-envelope-o"></i>
+                                                <span>support@phukiengiare.vn</span>
+                                            </div>
+                                            <div class="phone">
+                                                <i class="fa fa-phone"></i>
+                                                <span>0123456789</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column col-sm-7 col-xs-12 not-animated" data-animate="fadeInUp" data-delay="200">
+                                    <div class="row">
+                                        <div class="column col-sm-4 col-xs-12 not-animated" data-animate="fadeInUp" data-delay="300">
+                                            @*<h3>My Account</h3>
+                                            <ul>
+                                                <li><a href="#">My Account</a></li>
+                                                <li><a href="#">Order History</a></li>
+                                                <li><a href="#">Contact Us</a></li>
+                                                <li><a href="#">Returns</a></li>
+                                                <li><a href="#">Site Map</a></li>
+                                            </ul>*@
+                                        </div>
+                                        <div class="column col-sm-4 col-xs-12 not-animated" data-animate="fadeInUp" data-delay="400">
+                                            @*<h3>Extras</h3>
+                                            <ul>
+                                                <li><a href="#">Brands</a></li>
+                                                <li><a href="#">Gift Vouchers</a></li>
+                                                <li><a href="#">Affiliates</a></li>
+                                                <li><a href="#">Specials</a></li>
+                                                <li><a href="#">Newsletter</a></li>
+                                            </ul>*@
+                                        </div>
+                                        <div class="column col-sm-4 col-xs-12 not-animated" data-animate="fadeInUp" data-delay="200">
+                                            @*<h3>Information</h3>
+                                            <ul>
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Privacy Policy</a></li>
+                                                <li><a href="#">FAQ'S</a></li>
+                                                <li><a href="#">Typography</a></li>
+                                                <li><a href="#">Pricing</a></li>
+                                            </ul>*@
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column col-sm-5 col-xs-12 not-animated" data-animate="fadeInUp" data-delay="300">
+                                <div class="bt-newletter">
+                                    <div class="footer-newletter">
+                                        <div class="title">
+                                            <h3>Đăng ký nhận tin</h3>
+                                            @*<p>Subscribe to our newsletter today!</p>*@
+                                        </div>
+                                        <div>
+                                            <div class="newletter-content">
+                                                <div class="frm_subscribe">
+                                                    <form name="subscribe" id="subscribe47">
+                                                        <table>
+                                                            <tr>
+                                                                <td><div class="boss-newletter"><input class="form-control input-new" size="50" type="text" placeholder="Nhập email" name="subscribe_email" id="subscribe_email"> <a class="btn btn-new">Subscribe</a></div></td>
+                                                            </tr>
+                                                            <tr style="display:none;">
+                                                                <td><input class="form-control input-new" size="50" type="text" value="Put your email address here" name="subscribe_name" id="subscribe_name"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td id="subscribe_result47"></td>
+                                                            </tr>
+                                                        </table>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-payment">
+                    <div class="container">
+                        <div class="row">
+                            <div class="column col-sm-6 col-xs-12  pull-left not-animated" data-animate="fadeInUp" data-delay="500">
+                                <div class="payment pull-left">
+                                    <ul>
+                                        <li><a title="Skrill" href="#" class="skrill"><img alt="Skrill" src="/Assets/images/catalog/bt_leather/skrill.png"></a></li>
+                                        <li><a title="MasterCard" href="#" class="masterCard"><img alt="MasterCard" src="/Assets/images/catalog/bt_leather/master.png" /></a></li>
+                                        <li><a title="Visa" href="#" class="visa"><img alt="Visa" src="/Assets/images/catalog/bt_leather/visa.png"></a></li>
+                                        <li><a title="Merican" href="#" class="merican"><img alt="Merican" src="/Assets/images/catalog/bt_leather/american.png" /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="column col-sm-6 col-xs-12 pull-right not-animated" data-animate="fadeInUp" data-delay="500">
+                                <div class="footer-social pull-right">
+                                    <h3>Follow us</h3>
+                                    <ul>
+                                        <li class="bt-icon-face"><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="bt-icon-twitter"><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="bt-icon-google"><a href="#" title="Googleplus"><i class="fa fa-google-plus"></i></a></li>
+                                        <li class="bt-icon-youtube"><a href="#" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                                        <li class="bt-icon-rss"><a href="#" title="RSS"><i class="fa fa-rss"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bt-powered">
+                    <div class="container">
+                        <div class="row">
+                            <div class="powered col-sm-12 col-xs-12">
+                                <div id="powered">
+                                    <p> © Được sử hữu trí tuệ bởi Phụ Kiện Giá Rẻ.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div id="back_top" class="back_top" title="Back To Top"><span><i class="fa fa-angle-up"></i></span></div>
+        <script type="text/javascript">
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 600) {
+                        $('#back_top').fadeIn();
+                    }
+                    else {
+                        $('#back_top').fadeOut();
+                    }
+                });
+                $("#back_top").click(function (e) {
+                    e.preventDefault();
+                    $('body,html').animate({ scrollTop: 0 }, 800, 'swing');
+                });
+            });
+        </script>
+        @RenderSection("Scripts", false);
+        <!--
+        OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+        Please donate via PayPal to donate@opencart.com
+        //-->
+        <!-- Theme created by Welford Media for OpenCart 2.0 www.welfordmedia.co.uk -->
+    </div> <!-- End #bt_container -->
+
+</body>
+</html>

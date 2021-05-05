@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "Step1";
+}
+
+<!-- End #bt_header -->
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+        <li><a href="pages/checkout.html">Checkout</a></li>
+    </ul>
+    <div class="row">
+        <div id="content" class="col-sm-12">
+            <h1 class="title">Thanh toán</h1>
+            <div class="checkout">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Bước kế: Chọn hình thức đặt hàng</h4>
+                        </div>
+                        <div id="collapse-checkout-option" class="panel-collapse collapse in" aria-expanded="true" style="" role="button">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <p>Lựa chọn hình thức:</p>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" checked="checked" value="guest" name="account">
+                                                Khách hàng vãng lai? Không cần tài khoản.
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" value="login" name="account">
+                                                Đã có tài khoản? Đăng nhập
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" value="register" name="account">
+                                                Chưa có tài khoản? Đăng ký
+                                            </label>
+                                        </div>
+                                        <p>Đăng ký tài khoản sẽ giúp bạn mua hàng nhanh hơn, dễ dàng theo dõi tình trạng các đơn hàng của mình và nhận được nhiều ưu đãi từ chúng tôi.</p>
+                                        <input type="button" class="btn btn-primary" id="button-continues" value="Tiếp tục">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer -->
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('#button-continues').off('click').on('click', function () {
+                var chosen = $('input[name=account]:checked').val();
+                if (chosen == "guest")
+                    location.href = '/CheckOut/Step2'
+                else if (chosen == "login")
+                    location.href = '/Account/Login?url=' + window.location.href + '';
+                else if (chosen == "register")
+                    location.href = '/Account/Register';
+            });
+        })
+    </script>
+}

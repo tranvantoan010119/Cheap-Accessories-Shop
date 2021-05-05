@@ -1,0 +1,46 @@
+C:\Users\Administrator\documents\visual studio 2015\Projects\LeatherShop\Common\bin\Debug\Common.dll
+C:\Users\Administrator\documents\visual studio 2015\Projects\LeatherShop\Common\bin\Debug\Common.pdb
+C:\Users\Administrator\documents\visual studio 2015\Projects\LeatherShop\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\documents\visual studio 2015\Projects\LeatherShop\Common\obj\Debug\Common.dll
+C:\Users\Administrator\documents\visual studio 2015\Projects\LeatherShop\Common\obj\Debug\Common.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Common\bin\Debug\Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Common\bin\Debug\Common.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Common\obj\Debug\Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Common\obj\Debug\Common.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VatTuHaTay\Common\bin\Debug\Common.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Common\bin\Debug\Common.pdb
+C:\Users\Administrator\Desktop\VatTuHaTay\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VatTuHaTay\Common\obj\Debug\Common.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Common\obj\Debug\Common.pdb
+C:\Users\Administrator\Downloads\VatTuHaTay\Common\bin\Debug\Common.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Common\bin\Debug\Common.pdb
+C:\Users\Administrator\Downloads\VatTuHaTay\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\VatTuHaTay\Common\obj\Debug\Common.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Common\obj\Debug\Common.pdb
+C:\Users\Administrator\Downloads\TheBody\Common\bin\Debug\Common.dll
+C:\Users\Administrator\Downloads\TheBody\Common\bin\Debug\Common.pdb
+C:\Users\Administrator\Downloads\TheBody\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\TheBody\Common\obj\Debug\Common.dll
+C:\Users\Administrator\Downloads\TheBody\Common\obj\Debug\Common.pdb
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Common\bin\Debug\Common.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Common\bin\Debug\Common.pdb
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Common\obj\Debug\Common.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Common\obj\Debug\Common.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Common\bin\Debug\Common.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Common\bin\Debug\Common.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Common\obj\Debug\Common.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Common\obj\Debug\Common.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Common\bin\Debug\Common.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Common\bin\Debug\Common.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Common\obj\Debug\Common.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Common\obj\Debug\Common.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Common\bin\Debug\Common.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Common\bin\Debug\Common.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Common\obj\Debug\Common.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Common\obj\Debug\Common.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Common\obj\Debug\Common.csprojAssemblyReference.cache
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache

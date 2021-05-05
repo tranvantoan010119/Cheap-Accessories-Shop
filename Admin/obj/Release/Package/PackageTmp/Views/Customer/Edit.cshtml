@@ -1,0 +1,161 @@
+﻿@model Services.ViewModels.CustomerViewModel
+@{
+    ViewBag.Title = "Cập nhật khách hàng";
+}
+
+@section currentNavBar{
+    <li>
+        <a href="/Customer" class="active">Khách hàng</a>
+    </li>
+    <li>
+        <a href="#" class="active">Cập nhật</a>
+    </li>
+}
+
+<div class="container-fluid container-fixed-lg">
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <div class="panel panel-transparent">
+                <div class="panel-body">
+                    <form id="form-customer-edit" role="form" method="post" action="/Customer/Edit">
+                        @Html.ValidationSummary("", new { style = "color:#a94442" })
+                        @*<p style="color:#a94442" class="hide" id="allModelError"></p>*@
+                        @*<input type="hidden" name="Id" id="Id" value="@(Request["id"] ?? "")" />*@
+                        @Html.HiddenFor(m => m.Id)
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default">
+                                    <label>Email</label>
+                                    @Html.TextBoxFor(m=>m.Email,new { @class = "form-control", @readonly = "readonly" })
+                                    @*<input type="text" class="form-control" name="Email" id="Email" readonly="readonly">*@
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default">
+                                    <label>Mã khách hàng</label>
+                                    @Html.TextBoxFor(m => m.GuidId, new { @class = "form-control", @readonly = "readonly" })
+                                    @*<input type="text" class="form-control" name="GuidId" id="GuidId" readonly="readonly" />*@
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default">
+                                    <label>Họ và tên</label>
+                                    @Html.TextBoxFor(m => m.FullName, new { @class = "form-control"})
+                                    @*<input type="text" class="form-control" name="FullName" id="FullName">*@
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group form-group-default">
+                                    <label>Số điện thoại</label>
+                                    @Html.TextBoxFor(m => m.PhoneNo, new { @class = "form-control" })
+                                    @*<input type="text" class="form-control" name="PhoneNo" id="PhoneNo">*@
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group form-group-default">
+                                    <label>Trạng thái</label>
+                                    <input type="checkbox" name="cbStatus" @(Model.Status?"checked" : "")  id="cbStatus">
+                                    @Html.HiddenFor(m => m.Status)
+                                    @*<input type="hidden" name="Status" id="Status">*@
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix">
+                            <div class="col-sm-12">
+                                <div class="form-group form-group-default">
+                                    <label>Địa chỉ</label>
+                                    @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+                                    @*<input class="form-control" type="text" name="Address" id="Address" />*@
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <button class="btn btn-primary" type="submit">Save</button>
+                        <a class="btn btn-default" href="/Customer">Back To List</a>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<input type="hidden" name="Result" id="Result" value="@ViewBag.Result" />
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            // binding model
+            //$.ajax({
+            //    url: '/Customer/ViewDetail',
+            //    type: 'get',
+            //    data: { id: $('input#Id').val() },
+            //    success: function (res) {
+            //        $('input#GuidId').val(res.data.GuidId);
+            //        $('input#Email').val(res.data.Email);
+            //        $('input#FullName').val(res.data.FullName);
+            //        $('input#PhoneNo').val(res.data.PhoneNo);
+            //        $('input#cbStatus').prop('checked', res.data.Status);
+            //        $('input#Status').val(res.data.Status);
+            //        $('input#Address').val(res.data.Address);
+            //        $('input#GuidId').val(res.data.GuidId);
+            //    },
+            //    error: function (xhr, status, error) {
+            //        console.log(xhr.responseText);
+            //    }
+            //});
+
+            $('#cbStatus').off('change').on('change', function () {
+                if($(this).is(":checked"))
+                {
+                    $('#Status').val(true);
+                }
+                else
+                {
+                    $('#Status').val(false);
+                }
+            });
+            if ($('#Result').val() != "")
+                toastr["error"]("Có lỗi xảy ra, vui lòng thử lại.");
+            // submit form
+            //$('#form-customer-edit').off('submit').on('submit', function (e) {
+            //    e.preventDefault();
+            //    var data = {
+            //        Id: $('input#Id').val(),
+            //        GuidId: $('input#GuidId').val(),
+            //        FullName: $('input#FullName').val(),
+            //        PhoneNo: $('input#PhoneNo').val(),
+            //        Address: $('input#Address').val(),
+            //        Status: $('input#Status').is(':checked')
+            //    };
+
+            //    $.ajax({
+            //        url: '/Customer/Edit',
+            //        data: JSON.stringify(data),
+            //        type: 'post',
+            //        contentType: 'application/json',
+            //        success: function (res) {
+            //            if (res.status) {
+            //                alert("success");
+            //                location.href = '/Customer';
+            //            }
+            //            else {
+            //                if (res.msg) {
+            //                    var html = "";
+            //                    $.each(res.msg, function (i, item) {
+            //                        html += item + "</br>";
+            //                    });
+            //                    $('#allModelError').html(html);
+            //                }
+            //                alert("error");
+            //            }
+            //        }
+            //    });
+            //})
+        });
+    </script>
+}

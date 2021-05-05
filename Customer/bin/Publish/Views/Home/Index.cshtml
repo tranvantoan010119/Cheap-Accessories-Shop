@@ -1,0 +1,424 @@
+﻿@using Common
+@using Services.Models
+@using Customers.Ultilities
+
+@{
+    ViewBag.Title = "Index";
+}
+<div id="bt_slideshow">
+    <div class="header_slider">
+        <div class="boss_slider">
+            <div class="tp-banner-container">
+                <div class="tp-banner tp-banner0">
+                    <ul>
+                        <!-- SLIDE  -->
+                        <li data-link="#" data-target="_blank" data-transition="slideup" data-slotamount="7" data-masterspeed="500" data-saveperformance="on">
+                            <!-- MAIN IMAGE -->
+                            <img src="/Assets/images/catalog/bt_leather/dummy.png" alt="slidebg1" data-lazyload="/Assets/images/bg1.jpg" data-bgposition="left center" data-kenburns="off" data-duration="14000" data-ease="Linear.easeNone" data-bgpositionend="right center" />
+                            <!-- LAYER NR. 1 -->
+                            @*<div class="tp-caption medium_text sft stt rs-parallaxlevel-0"
+                                data-x="1046"
+                                data-y="426"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="500"
+                                data-start="2400"
+                                data-end="5000"
+                                data-endspeed="300"
+                                data-easing="easeOutBack"
+                                data-endeasing="easeOutBack"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                style="z-index: 2;"><span class="btn">shop women</span></div>*@
+                            <!-- LAYER NR. 2 -->
+                            @*<div class="tp-caption big_white sfl str rs-parallaxlevel-0"
+                                data-x="205"
+                                data-y="16"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="100"
+                                data-start="800"
+                                data-end="5000"
+                                data-endspeed="100"
+                                data-easing="easeOutBack"
+                                data-endeasing="easeOutBack"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                style="z-index: 2;"><img src="/Assets/images/catalog/bt_leather/dummy.png" alt="" data-lazyload="/Assets/images/catalog/bt_leather/slideshow-img1-1.jpg" /></div>*@
+                            <!-- LAYER NR. 3 -->
+                            @*<div class="tp-caption big_white sfr stl rs-parallaxlevel-0"
+                                data-x="513"
+                                data-y="92"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="100"
+                                data-start="1000"
+                                data-end="5000"
+                                data-endspeed="100"
+                                data-easing="easeOutBack"
+                                data-endeasing="easeOutBack"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                style="z-index: 2;"><img src="/Assets/images/catalog/bt_leather/dummy.png" alt="" data-lazyload="/Assets/images/catalog/bt_leather/slideshow-img1-2.jpg" /></div>*@
+                            <!-- LAYER NR. 4 -->
+                            @*<div class="tp-caption medium_white sft stb rs-parallaxlevel-0"
+                                data-x="1168"
+                                data-y="91"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="100"
+                                data-start="1200"
+                                data-end="5000"
+                                data-endspeed="100"
+                                data-easing="easeOutBack"
+                                data-endeasing="easeOutBack"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                style="z-index: 2;">SEPTEMBER LOOKBOOK</div>*@
+                            <!-- LAYER NR. 5 -->
+                            @*<div class="tp-caption small_text sft stt rs-parallaxlevel-0"
+                                data-x="1065"
+                                data-y="343"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="100"
+                                data-start="2000"
+                                data-end="5000"
+                                data-endspeed="100"
+                                data-easing="easeOutBack"
+                                data-endeasing="easeOutBack"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                style="z-index: 2;">PROIN SED LIBERO VEHICULA AUGUE VENENATIS HENDRERIT.</div>*@
+                            <!-- LAYER NR. 6 -->
+                            @*<div class="tp-caption very_large_text sft stb rs-parallaxlevel-0"
+                                     data-x="1046"
+                                     data-y="164"
+                                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                     data-speed="100"
+                                     data-start="1600"
+                                     data-end="5000"
+                                     data-endspeed="100"
+                                     data-easing="easeOutBack"
+                                     data-endeasing="easeOutBack"
+                                     data-elementdelay="0.1"
+                                     data-endelementdelay="0.1"
+                                     style="z-index: 2;">
+                                    FALL / WINTER
+                                </div>*@
+                            <!-- LAYER NR. 7 -->
+                            @*<div class="tp-caption very_large_text sft stt rs-parallaxlevel-0"
+                                data-x="1213"
+                                data-y="238"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="100"
+                                data-start="1800"
+                                data-end="5000"
+                                data-endspeed="100"
+                                data-easing="easeOutBack"
+                                data-endeasing="easeOutBack"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                style="z-index: 2;">2014</div>*@
+                            <!-- LAYER NR. 8 -->
+                            @*<div class="tp-caption small_text sft stt rs-parallaxlevel-0"
+                                data-x="1130"
+                                data-y="367"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="100"
+                                data-start="2200"
+                                data-end="5000"
+                                data-endspeed="100"
+                                data-easing="easeOutBack"
+                                data-endeasing="easeOutBack"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                style="z-index: 2;">INTEGER FAUCIBUS AC SEM EU ALIQUAM</div>*@
+                            <!-- LAYER NR. 9 -->
+                            @*<div class="tp-caption line_white sft stt rs-parallaxlevel-0"
+                                data-x="1225"
+                                data-y="100"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="100"
+                                data-start="1400"
+                                data-end="5000"
+                                data-endspeed="100"
+                                data-easing="easeOutBack"
+                                data-endeasing="easeOutBack"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                style="z-index: 2;">___</div>*@
+                        </li>
+                        <li data-link="#" data-target="_blank" data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on">
+                            <!-- MAIN IMAGE -->
+                            <img src="/Assets/images/catalog/bt_leather/dummy.png" alt="slidebg1" data-lazyload="/Assets/images/bg2.jpg" data-bgposition="left center" data-kenburns="off" data-duration="14000" data-ease="Linear.easeNone" data-bgpositionend="right center" />
+                            <!-- LAYER NR. 1 -->
+                            @*<div class="tp-caption medium_text sft stt rs-parallaxlevel-0"
+                                data-x="410"
+                                data-y="728"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="500"
+                                data-start="2000"
+                                data-end="5000"
+                                data-endspeed="300"
+                                data-easing="easeOutBack"
+                                data-endeasing="easeOutBack"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                style="z-index: 2;"><span class="btn">shop men</span></div>*@
+                            <!-- LAYER NR. 2 -->
+                            @*<div class="tp-caption big_white sfl str rs-parallaxlevel-0"
+                                data-x="255"
+                                data-y="72"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="100"
+                                data-start="800"
+                                data-end="5000"
+                                data-endspeed="100"
+                                data-easing="easeOutBack"
+                                data-endeasing="easeOutBack"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                style="z-index: 2;"><img src="/Assets/images/catalog/bt_leather/dummy.png" alt="" data-lazyload="/Assets/images/catalog/bt_leather/slideshow-img2-1.jpg" /></div>*@
+                            <!-- LAYER NR. 3 -->
+                            @*<div class="tp-caption big_white sft stt rs-parallaxlevel-0"
+                                data-x="504"
+                                data-y="26"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="100"
+                                data-start="1000"
+                                data-end="5000"
+                                data-endspeed="100"
+                                data-easing="easeOutBack"
+                                data-endeasing="easeOutBack"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                style="z-index: 2;"><img src="/Assets/images/catalog/bt_leather/dummy.png" alt="" data-lazyload="/Assets/images/catalog/bt_leather/slideshow-img2-2.jpg" /></div>*@
+                            <!-- LAYER NR. 4 -->
+                            @*<div class="tp-caption large_text sft stt rs-parallaxlevel-0"
+                                data-x="340"
+                                data-y="402"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="100"
+                                data-start="1200"
+                                data-end="5000"
+                                data-endspeed="100"
+                                data-easing="easeOutBack"
+                                data-endeasing="easeOutBack"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                style="z-index: 2;">LOREM ENIM ODIO</div>*@
+                            <!-- LAYER NR. 5 -->
+                            @*<div class="tp-caption small_text sft stt rs-parallaxlevel-0"
+                                data-x="282"
+                                data-y="668"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="100"
+                                data-start="1800"
+                                data-end="5000"
+                                data-endspeed="100"
+                                data-easing="easeOutBack"
+                                data-endeasing="easeOutBack"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                style="z-index: 2;">EGET VELIT SED METUS PRETIUM LOBORTIS UT ELEMENTUM ODIO</div>*@
+                            <!-- LAYER NR. 6 -->
+                            @*<div class="tp-caption medium_text sft stt rs-parallaxlevel-0"
+                                data-x="365"
+                                data-y="517"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="100"
+                                data-start="1600"
+                                data-end="5000"
+                                data-endspeed="100"
+                                data-easing="easeOutBack"
+                                data-endeasing="easeOutBack"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                style="z-index: 2;"><span class="btn">shop men</span></div>*@
+                            <!-- LAYER NR. 7 -->
+                            @*<div class="tp-caption small_text sft stt rs-parallaxlevel-0"
+                                data-x="355"
+                                data-y="481"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="100"
+                                data-start="1400"
+                                data-end="5000"
+                                data-endspeed="100"
+                                data-easing="easeOutBack"
+                                data-endeasing="easeOutBack"
+                                data-elementdelay="0.1"
+                                data-endelementdelay="0.1"
+                                style="z-index: 2;">eget velit sed metus pretium lobortis ut elementum odio</div>*@
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+<!--
+jQuery(document).ready(function() {
+	jQuery('.tp-banner0').show().revolution({
+		dottedOverlay:"none",
+		delay:5000,
+		startWithSlide:0,
+		startwidth:1920,
+		startheight:600,
+		hideThumbs:200,
+		hideTimerBar:"on",
+		thumbWidth:100,
+		thumbHeight:50,
+		thumbAmount:2,
+		navigationType:"bullet",
+		navigationArrows:"solo",
+		navigationStyle:"preview2",
+		touchenabled:"off",
+		onHoverStop:"off",
+		swipe_velocity: 0.7,
+		swipe_min_touches: 1,
+		swipe_max_touches: 1,
+		drag_block_vertical: false,
+		parallax:"mouse",
+		parallaxBgFreeze:"on",
+		parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
+		keyboardNavigation:"off",
+		navigationHAlign:"center",
+		navigationVAlign:"bottom",
+		navigationHOffset:0,
+		navigationVOffset:30,
+		soloArrowLeftHalign:"left",
+		soloArrowLeftValign:"center",
+		soloArrowLeftHOffset:0,
+		soloArrowLeftVOffset:0,
+		soloArrowRightHalign:"right",
+		soloArrowRightValign:"center",
+		soloArrowRightHOffset:0,
+		soloArrowRightVOffset:0,
+		shadow:0,
+		fullWidth:"on",
+		fullScreen:"off",
+		spinner:"spinner4",
+		stopLoop:"off",
+		stopAfterLoops:-1,
+		stopAtSlide:-1,
+		shuffle:"off",
+		autoHeight:"off",
+		forceFullWidth:"off",
+		hideThumbsOnMobile:"off",
+		hideNavDelayOnMobile:1500,
+		hideBulletsOnMobile:"off",
+		hideArrowsOnMobile:"off",
+		hideThumbsUnderResolution:0,
+		hideSliderAtLimit:2,
+		hideCaptionAtLimit:2,
+		hideAllCaptionAtLilmit:767,
+		videoJsPath:"rs-plugin/videojs/",
+		fullScreenOffsetContainer: ""
+	});
+});	//ready
+//--></script>
+</div>
+<div id="content" class="col-sm-12 nopadding">
+    <script type="text/javascript" src="/Assets/javascript/bossthemes/cloud-zoom/cloud-zoom.1.0.3.js"></script> 
+    @*<div class="bt-staticblock-shopnow">
+        <div class="bt-staticblock col-sm-4 nopadding effect-zoom">
+            <div class="bt-staticblock-image"><img class="img-responsive" src="/Assets/images/catalog/bt_leather/banner1.png" alt="banner"></div>
+        </div>
+        <div class="bt-staticblock col-sm-4 nopadding effect-zoom">
+            <div class="bt-staticblock-image"><img class="img-responsive" src="/Assets/images/catalog/bt_leather/banner2.jpg" alt="banner"></div>
+        </div>
+        <div class="bt-staticblock col-sm-4 nopadding effect-zoom">
+            <div class="bt-staticblock-image"><img class="img-responsive" src="/Assets/images/catalog/bt_leather/banner3.jpg" alt="banner"></div>
+        </div>
+    </div>*@
+    <div class="popular-cate">
+        @if (ViewBag.HotProducts != null)
+        {
+            foreach (var item in (List<Product>)ViewBag.HotProducts)
+            {
+                <div class="box-content col-md-2 col-sm-4 col-xs-6">
+                    <div class="cate-image">
+                        <a title="Malesuada" href="/Product/Detail/@item.Id"><img alt="@item.Name" src="@Constant.AdminAddress@item.Avatar" class="img-responsive" /></a>
+                        <div class="cate-name-hover">
+                            <a title="Malesuada" href="/Product/Detail/@item.Id">@item.SellPrice.labelFormatCurrency()</a>
+                            <hr>
+                            @if (item.Quantity > 0)
+                            {
+                                <span class="bt-items"> chỉ còn @item.Quantity sản phẩm</span>
+                            }
+                            else
+                            {
+                                <span class="bt-items"> Tạm hết hàng</span>
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+    <div class="bt-featured-pro bt-nprolarge-tabs not-animated" data-animate="fadeInUp" data-delay="300">
+        <div id="tabcontent0" class="box-heading title htabs">
+            <a href="#bt_procate_00" data-id="1">Khuyến mại</a>
+            <a href="#bt_procate_01" data-id="2">Bán chạy</a>
+            <a href="#bt_procate_02" data-id="3">Xem nhiều</a>
+        </div>
+        <div id="bt_procate_00" class="box htabs-content boss-category-pro bt-nprolarge-nslider ">
+            <div class="box-content bt-product-content">
+                <div class="bt-items bt-product-grid">
+                    <div id="boss_featured_0">
+                        @foreach (var item in (List<Product>)ViewBag.BestDeal)
+                        {
+                            @Html.Partial("/Views/Shared/_Product.cshtml", item)
+                        }
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="bt-viewall"><a class="btn btn-checkout view-all black-normal" href="/Product/ListProduct_BestDeal">Xem thêm</a></div>
+        </div>
+        <div id="bt_procate_01" class="box htabs-content boss-category-pro bt-nprolarge-nslider ">
+            <div class="box-content bt-product-content">
+                <div class="bt-items bt-product-grid">
+                    <div id="boss_featured_0">
+                        @foreach (var item in (List<Product>)ViewBag.BestSeller)
+                        {
+                            @Html.Partial("/Views/Shared/_Product.cshtml", item)
+                        }
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="bt-viewall"><a class="btn btn-checkout view-all black-normal" href="/Product/ListProduct_BestSeller">Xem thêm</a></div>
+        </div>
+        <div id="bt_procate_02" class="box htabs-content boss-category-pro bt-nprolarge-nslider ">
+            <div class="box-content bt-product-content">
+                <div class="bt-items bt-product-grid">
+                    <div id="boss_featured_0">
+                        @foreach (var item in (List<Product>)ViewBag.BestView)
+                        {
+                            @Html.Partial("/Views/Shared/_Product.cshtml", item)
+                        }
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="bt-viewall"><a class="btn btn-checkout view-all black-normal" href="/Product/ListProduct_BestViewer">Xem thêm</a></div>
+        </div>
+        <script type="text/javascript">
+<!--
+$('#tabcontent0 a').bttabs(0);
+//--></script>
+    </div>
+    <div class="boss-blog-featured not-animated" data-animate="fadeInUp" data-delay="300">
+        <div class="block-heading">
+            <h1>Tin Tức Mới</h1>
+        </div>
+        <div class="block-content">
+            <div class="box-article">
+                @{ Html.RenderAction("HotBlogs", "Home"); }
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+
+@section Scripts{
+    <script src="~/Assets/controller/homeController.js"></script>
+}

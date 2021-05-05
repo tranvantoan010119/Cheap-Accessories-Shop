@@ -1,0 +1,210 @@
+﻿@using Customers.Ultilities
+@using System.Globalization
+@using Common
+@model List<Services.Models.Product>
+
+@{
+    ViewBag.Title = "Search";
+    string url = "/Product/Search?keyword=" + ViewBag.keyword + "&page=";
+}
+
+@section css{
+
+    <link href="~/Assets/Plugin/Jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+}
+
+@section Scripts{
+    <script src="~/Assets/Plugin/Jquery-ui/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: '/Product/Get_Price_Range',
+                type: 'get',
+                success: function (res) {
+                    if ($('#maxPrice').val() > 0) {
+                        $("#slider-range").slider({
+                            range: true,
+                            min: res.min,
+                            max: res.max,
+                            values: [$('#minPrice').val(), $('#maxPrice').val()],
+                            slide: function (event, ui) {
+                                $("#amount").val(base.formatTextboxCurrency(ui.values[0]) + " đ" + " - " + base.formatTextboxCurrency(ui.values[1]) + " đ");
+                                $('#minPrice').val(ui.values[0]);
+                                $('#maxPrice').val(ui.values[1]);
+                            }
+                        });
+
+                        $("#amount").val(base.formatTextboxCurrency($('#minPrice').val()) + " đ" + " - " + base.formatTextboxCurrency($('#maxPrice').val()) + " đ");
+                    }
+                    else {
+                        $("#slider-range").slider({
+                            range: true,
+                            min: res.min,
+                            max: res.max,
+                            values: [res.min, res.max],
+                            slide: function (event, ui) {
+                                $("#amount").val(base.formatTextboxCurrency(ui.values[0]) + " đ" + " - " + base.formatTextboxCurrency(ui.values[1]) + " đ");
+                                $('#minPrice').val(ui.values[0]);
+                                $('#maxPrice').val(ui.values[1]);
+                            }
+                        });
+
+                        $("#amount").val(base.formatTextboxCurrency(res.min) + " đ" + " - " + base.formatTextboxCurrency(res.max) + " đ");
+                    }
+                }
+            });
+        });
+    </script>
+}
+
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="/"><i class="fa fa-home"></i></a></li>
+        <li><a href="#">Tìm kiếm</a></li>
+    </ul>
+    <div class="row">
+        <div id="content" class="col-sm-12">
+            @using (Html.BeginForm("Search", "Product", FormMethod.Get))
+            {
+                <label class="control-label label-search" for="input-search">Từ khóa</label>
+                <div class="input-search">
+                    <input type="text" name="keyword" value="@ViewBag.keyword" id="keyword" class="form-control" />
+                </div>
+
+                <div class="input-search">
+                    <p>
+                        <label class="control-label label-search" for="amount">Khoảng giá: </label>
+                        <input type="text" id="amount" readonly style="border:0;color:#f6931f; font-weight:bold;">
+                    </p>
+
+                    <div id="slider-range"></div>
+                </div>
+                <input type="hidden" name="minPrice" id="minPrice" value="@ViewBag.minPrice" />
+                <input type="hidden" name="maxPrice" id="maxPrice" value="@ViewBag.maxPrice" />
+                <input type="submit" value="Tìm kiếm" id="button-search" class="btn btn-primary" />
+            }
+
+            <div class="product-filter">
+                <div class="link-compare"><a href="#" id="compare-total"></a></div>
+                <div class="limit-sort hidden-xs">
+                    <div class="box_sort">
+                        <label class="control-label" for="input-sort">Sort By:</label>
+                        <label>
+                            <select id="input-sort" class="form-control selectpicker">
+                                <option value="pages/search.html" selected="selected">Default</option>
+                                <option value="pages/search.html">Name (A - Z)</option>
+                                <option value="pages/search.html">Name (Z - A)</option>
+                                <option value="pages/search.html">Price (Low &gt; High)</option>
+                                <option value="pages/search.html">Price (High &gt; Low)</option>
+                                <option value="pages/search.html">Rating (Highest)</option>
+                                <option value="pages/search.html">Rating (Lowest)</option>
+                                <option value="pages/search.html">Model (A - Z)</option>
+                                <option value="pages/search.html">Model (Z - A)</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="display hidden-xs">
+                        <button type="button" id="grid-view" class="btn-grid" title="Grid"><i class="fa fa-th"></i></button>
+                        <button type="button" id="list-view" class="btn-list" title="List"><i class="fa fa-th-list"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="product-layout product-list col-xs-12">
+                        <div class="product-thumb">
+                            <div class="image">
+                                <a href="/Product/Detail/@item.Id"><img src="@Constant.AdminAddress@item.Avatar" alt="@item.Name" class="img-responsive" /></a>
+                                <div class="button-group bt-button-group">
+                                    <a class="btn-cart" href="#" data-productid="@item.Id" data-stock="@item.Quantity"><i class="fa fa-shopping-cart"></i></a>
+                                    <a href="#" title="Add to Wish List" class="btn-wishlist"><i class="fa fa-heart"></i></a>
+                                    <a href="#" title="Compare this Product" class="btn-compare"><i class="fa fa-retweet"></i></a>
+                                    <button class="sft_quickshop_icon" title="Quick View"><span class="qs_icon"><i class="fa fa-search"></i></span></button>
+                                </div>
+                            </div>
+                            <div class="caption">
+                                <div class="name"><a href="/Product/Detail/@item.Id">@item.Name</a></div>
+                                <div class="description">
+                                    <p>
+                                        @item.Description
+                                    </p>
+                                </div>
+                                <p class="price">
+                                    @if (item.SaleOff > 0)
+                                    {
+                                        if (item.StartDate != null && item.EndDate != null && DateTime.Now >= item.StartDate && DateTime.Now <= item.EndDate)
+                                        {
+                                            <span class="price-new">@item.SaleOff.labelFormatCurrency()</span>
+                                            <span class="price-old">@item.Price.labelFormatCurrency()</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="price-new">@item.Price.labelFormatCurrency() </span>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <span class="price-new">@item.Price.labelFormatCurrency()</span>
+                                    }
+                                </p>
+                            </div>
+                            <div class="button-group bt-button-group button-list">
+                                <a class="btn-cart" href="#" data-productid="@item.Id" data-stock="@item.Quantity"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ</a>
+                                <a href="#" title="Add to Wish List" class="btn-wishlist"><i class="fa fa-heart"></i></a>
+                                <a href="#" title="Compare this Product" class="btn-compare"><i class="fa fa-retweet"></i></a>
+                                <button class="sft_quickshop_icon " title="Quick View"><span class="qs_icon"><i class="fa fa-search"></i></span></button>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            @if (ViewBag.totalPage > 1)
+            {
+                <div class="result-pagination">
+                    <div class="results pull-left">Showing @((ViewBag.pageSize * (ViewBag.page - 1)) + 1) to @((ViewBag.pageSize * ViewBag.page) < ViewBag.totalRow ? (ViewBag.pageSize * ViewBag.page) : ViewBag.totalRow) of @ViewBag.totalRow (@ViewBag.totalPage Pages)</div>
+                    <div class="links pull-right">
+                        <ul class="pagination">
+                            @if (ViewBag.page >= 3)
+                            {
+                                <li><a href="@(url)1">|&lt;</a></li>
+                            }
+                            @for (int i = ViewBag.page - 1; i <= ViewBag.page + 1; i++)
+                            {
+                                if (i <= 0)
+                                {
+                                    continue;
+                                }
+
+                                if (i > ViewBag.totalPage)
+                                {
+                                    break;
+                                }
+
+                                if (ViewBag.page == i)
+                                {
+                                    <li class="active"><span>@i</span></li>
+                                }
+                                else
+                                {
+                                    <li><a href="@url@i">@i</a></li>
+                                }
+                            }
+                            @if (ViewBag.page < ViewBag.totalPage - 1)
+                            {
+                                <li><a href="@url@ViewBag.totalPage">&gt;|</a></li>
+                            }
+                        </ul>
+
+                        @*<ul class="pagination">
+                                <li class="active"><span>1</span></li>
+                                <li><a href="pages/search.html">2</a></li>
+                                <li><a href="pages/search&amp;search=a&amp;page=2">&gt;</a></li>
+                                <li><a href="pages/search.html">&gt;|</a></li>
+                            </ul>*@
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

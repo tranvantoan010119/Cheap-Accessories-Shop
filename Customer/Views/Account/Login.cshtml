@@ -1,0 +1,46 @@
+﻿@model Services.ViewModels.LoginViewModel
+
+@{
+    ViewBag.Title = "Đăng Nhập";
+}
+
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="/"><i class="fa fa-home"></i></a></li>
+        <li><a href="/dang-nhap">Đăng nhập</a></li>
+    </ul>
+    <div class="row">
+        <div id="content" class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="login-content">
+                        <h3>Người dùng mới</h3>
+                        <p>Đăng Ký Tài Khoản</p>
+                        <p>Đăng ký tài khoản giúp bạn mua hàng nhanh hơn, cập nhật về tình trạng của những đơn hàng, theo dõi và thống kê lịch sử đơn hàng.</p>
+                        <a href="/dang-ky" class="btn btn-primary">Đăng Ký</a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="login-content">
+                        <h3>Đăng nhập</h3>
+                        <p>Dành cho khách hàng thường xuyên</p>
+                        <form action="/Account/Login" method="post">
+                            <input type="hidden" value="@ViewBag.url" name="url" />
+                            @Html.ValidationSummary("", new { @class = "custom-color-msg" })
+                            <div class="form-group">
+                                <label class="control-label" for="input-email">E-Mail</label>
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @autofocus = "autofocus" })
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="input-password">Mật khẩu</label>
+                                @Html.PasswordFor(m => m.Password, new { @class = "form-control"})
+                            </div>
+                            <input type="submit" value="Đăng nhập" class="btn btn-primary" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

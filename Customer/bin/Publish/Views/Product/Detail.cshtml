@@ -1,0 +1,355 @@
+﻿@using Common
+@model Services.ViewModels.ProductViewModel
+
+@{
+    ViewBag.Title = Model.Name;
+    var imgPath = Customers.Ultilities.Constant.AdminAddress;
+    var images = Model.Images != null ? Model.Images.Substring(0, Model.Images.LastIndexOf(';')) : null;
+    Model.Detail = Model.Detail.Replace("src=\"/Images/", "src=\"" + imgPath + "/Images/");
+}
+<div class="bt-breadcrumb">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="/"><i class="fa fa-home"></i></a></li>
+            <li><a href="/Category/Index/@Model.CateId">@Model.CateName</a></li>
+            <li><a href="#">@Model.Name</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div id="column-left" class="col-sm-3 hidden-xs">
+            @{Html.RenderAction("LeftSide", "Category");}
+            <div class="bt-featured box">
+                <div class="box-heading"><h2>Giảm giá nhiều nhất</h2></div>
+                @{Html.RenderAction("BestDeals", "Product"); }
+            </div>
+            <div class="banner-column">
+                
+            </div>
+        </div>
+        <div id="content" class="col-sm-9">
+            <script type="text/javascript" src="/Assets/javascript/bossthemes/cloud-zoom/cloud-zoom.1.0.3.js"></script>
+            <div id="boss_zoom">
+                <div class="bosszoomtoolbox">
+                    <ul class="thumbnails">
+                        <li><a href="@imgPath@Model.Avatar" class="cloud-zoom" id='zoom1' rel=""><img src="@imgPath@Model.Avatar" alt="@Model.Name" id="image" /></a></li>
+                    </ul>
+                    @if (!String.IsNullOrEmpty(Model.Images) && Model.Images.Split(';').Length > 2)
+                    {
+                        <div class="image-additional">
+                            <ul class="thumbnails" id="boss-image-additional-zoom">
+                                @foreach (var item in images.Split(';'))
+                                {
+                                    <li class="image-additional"><a href="@imgPath@item" title="Suspendisse accus antium doloremque" class="cloud-zoom-gallery" rel="useZoom: 'zoom1', smallImage: '@imgPath@item' "><img src="@imgPath@item" alt="@Model.Name" /></a></li>
+                                }
+                            </ul>
+                            <a id="prev_image_additional_zoom" class="prev nav_thumb" href="javascript:void(0)" style="display:block;" title="prev"><i data-original-title="Previous" title="" class="fa fa-angle-left btooltip">&nbsp;</i></a>
+                            <a id="next_image_additional_zoom" class="next nav_thumb" href="javascript:void(0)" style="display:block;" title="next"><i data-original-title="Next" title="" class="fa fa-angle-right btooltip">&nbsp;</i></a>
+                        </div>
+                    }
+                </div>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $(".bosszoomtoolbox").css('display', 'block');
+                    if (jQuery("#boss_zoom").html()) {
+                        jQuery(".bt-product-zoom").html(jQuery("#boss_zoom").html());
+                        jQuery("#boss_zoom").remove();
+                        $.fn.CloudZoom.defaults = {
+                            adjustX: 0,
+                            adjustY: 0,
+                            tint: '#FFF',
+                            tintOpacity: 0.5,
+                            softFocus: 0,
+                            lensOpacity: 0.7,
+                            zoomWidth: '430',
+                            zoomHeight: '430',
+                            position: 'inside',
+                            showTitle: 0,
+                            titleOpacity: 0.5,
+                            smoothMove: '3'
+                        };
+                    }
+                });
+            </script>
+            <script type="text/javascript" src="/Assets/javascript/bossthemes/cloud-zoom/cloud-zoom.1.0.3.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    var productName = '@Model.Name';
+                    var imgPath = '@imgPath';
+                    var gallerylist = [];
+                    var images = '@images';
+                    if (images != null) {
+                        $.each(images.split(';'), function (i, item) {
+                            gallerylist.push({
+                                href: imgPath + item,
+                                title: productName
+                            });
+                        });
+                    }
+                    $("#bt_viewlarge").bind('click', function () {
+                        function openGalleryList() {
+                            $.fancybox.open(gallerylist);
+                            return false;
+                        }
+                    });
+                    $("#boss-image-additional li a").click(function () {
+                        $("#boss_large").attr("href", this)
+                    });
+                });
+            </script>
+            <div class="product-info">
+                <div class="row">
+                    <div class="left pull-left col-sm-6 col-xs-12">
+                        <div class="bt-product-zoom">
+                            <ul class="thumbnails">
+                                <li><a class="thumbnail" href="#" title="Suspendisse accus antium doloremque"><img src="#" title="Suspendisse accus antium doloremque" alt="Suspendisse accus antium doloremque" /></a></li>
+                            </ul>
+                            <ul class="thumbnails" id="boss-image-additional">
+                                <li class="image-additional"><a class="thumbnail" href="#" title="Suspendisse accus antium doloremque"> <img src="#" title="Suspendisse accus antium doloremque" alt="Suspendisse accus antium doloremque" /></a></li>
+                                <li class="image-additional"><a class="thumbnail" href="#" title="Suspendisse accus antium doloremque"> <img src="#" title="Suspendisse accus antium doloremque" alt="Suspendisse accus antium doloremque" /></a></li>
+                                <li class="image-additional"><a class="thumbnail" href="#" title="Suspendisse accus antium doloremque"> <img src="#" title="Suspendisse accus antium doloremque" alt="Suspendisse accus antium doloremque" /></a></li>
+                                <li class="image-additional"><a class="thumbnail" href="#" title="Suspendisse accus antium doloremque"> <img src="#" title="Suspendisse accus antium doloremque" alt="Suspendisse accus antium doloremque" /></a></li>
+                                <li class="image-additional"><a class="thumbnail" href="#" title="Suspendisse accus antium doloremque"> <img src="#" title="Suspendisse accus antium doloremque" alt="Suspendisse accus antium doloremque" /></a></li>
+                            </ul>
+                            <a id="prev_image_additional" class="prev nav_thumb" href="javascript:void(0)" style="display:none;" title="prev"><i data-original-title="Previous" title="" class="fa fa-angle-left btooltip">&nbsp;</i></a>
+                            <a id="next_image_additional" class="next nav_thumb" href="javascript:void(0)" style="display:none;" title="next"><i data-original-title="Next" title="" class="fa fa-angle-right btooltip">&nbsp;</i></a>
+                        </div>
+                    </div>
+                    <div class="right pull-right col-sm-6 col-xs-12">
+                        <h2>@Model.Name</h2>
+                        @*<div class="rating">
+                                <p>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack fa-hidden"><i class="fa fa-star fa-stack-2x"></i></span>
+                                    <a href="javascript:void(0)">Write a review</a>
+                                </p>
+                            </div>*@
+                        <ul class="list-unstyled description">
+                            <li>Mã sản phẩm: @Model.Code</li>
+                            <li>Lượt xem: @Model.View</li>
+                            @if (Model.Quantity > 0)
+                            {
+                                <li>Tình trạng: <span>Còn hàng</span></li>
+                            }
+                            else
+                            {
+                                <li>Tình trạng: <span style="color:#f37432;">Hết hàng</span></li>
+                            }
+                        </ul>
+                        <div>
+                            <label class="control-label" for="input-quantity">Số lượng</label>
+                            <div class="select_number">
+                                <input type="text" class="text form-control" name="quantity" size="2" id="input-quantity" value="1" />
+                                <button onclick="changeQty(0); return false;" class="decrease">-</button>
+                                <button onclick="changeQty(1); return false;" class="increase">+</button>
+                            </div>
+                            <input type="hidden" name="product_id" value="42" />
+                            @*<div class="alert alert-info"><i class="fa fa-info-circle"></i> This product has a minimum quantity of 2</div>*@
+                            <div class="price_info">
+                                @if (Model.SaleOff > 0)
+                                {
+                                    if (Model.StartDate != null && Model.EndDate != null && DateTime.Now >= Model.StartDate && DateTime.Now <= Model.EndDate)
+                                    {
+                                        <span class="price-new">@Model.SaleOff.GetValueOrDefault().labelFormatCurrency()</span>
+                                        <span class="price-old">@Model.Price.labelFormatCurrency()</span>
+                                    }
+                                }
+                                else
+                                {
+                                <span class="price-new">@Model.Price.labelFormatCurrency()</span>
+                                }
+                            </div>
+                            <div class="cart_button">
+                                <div class="boss_cover"><span class="cart_icon"></span></div>
+                                <a id="button-cart" class="btn button_cart" data-productid="@Model.Id" data-stock="@(Model.Quantity)" href="#">Thêm vào giỏ</a>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn-wishlist" title="Yêu thích" href="#"><i class="fa fa-heart"></i></a>
+                                <a class="btn-compare" title="So sánh" href="#"><i class="fa fa-retweet"></i></a>
+                            </div>
+                            <div style="margin-top:17px">
+                                <!-- AddThis Button BEGIN -->
+                                <div class="addthis_toolbox addthis_default_style addthis_20x20_style">
+                                    <a class="addthis_button_preferred_1"></a>
+                                    <a class="addthis_button_preferred_2"></a>
+                                    <a class="addthis_button_preferred_3"></a>
+                                    <a class="addthis_button_preferred_4"></a>
+                                    <a class="addthis_button_compact"></a>
+                                    <a class="addthis_counter addthis_bubble_style"></a>
+                                </div>
+                                <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51a5fa9c59636a3d"></script>
+                                <!-- AddThis Button END -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="htabs">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab-description" data-toggle="tab">Chi tiết</a></li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab-description">
+                    @Html.Raw(Model.Detail)
+                </div>
+            </div>
+            <div class="product-related">
+                <h2>Sản phẩm liên quan</h2>
+                @{ Html.RenderAction("RelatedProducts", "Product", new { cateId = Model.CateId });}
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/Assets/javascript/bossthemes/carouFredSel-6.2.0.js"></script>
+<script type="text/javascript">
+<!--
+$('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
+	$.ajax({
+		url: 'index.php?route=product/product/getRecurringDescription',
+		type: 'post',
+		data: $('input[name=\'product_id\'], input[name=\'quantity\'], select[name=\'recurring_id\']'),
+		dataType: 'json',
+		beforeSend: function() {
+			$('#recurring-description').html('');
+		},
+		success: function(json) {
+			$('.alert, .text-danger').remove();
+			if (json['success']) {
+				$('#recurring-description').html(json['success']);
+			}
+		}
+	});
+});
+//--></script>
+<script type="text/javascript">
+<!--
+function changeQty(increase) {
+    var qty = parseInt($('.select_number').find("input").val());
+    if ( !isNaN(qty) ) {
+        qty = increase ? qty+1 : (qty > 2 ? qty-1 : 1);
+        $('.select_number').find("input").val(qty);
+    }else{
+		$('.select_number').find("input").val(1);
+	}
+}
+//--></script>
+<script type="text/javascript">
+<!--
+
+$('button[id^=\'button-upload\']').on('click', function() {
+	var node = this;
+	$('#form-upload').remove();
+	$('body').prepend('<form enctype="multipart/form-data" id="form-upload" style="display: none;"><input type="file" name="file" /></form>');
+	$('#form-upload input[name=\'file\']').trigger('click');
+	$('#form-upload input[name=\'file\']').on('change', function() {
+		$.ajax({
+			url: 'index.php?route=tool/upload',
+			type: 'post',
+			dataType: 'json',
+			data: new FormData($(this).parent()[0]),
+			cache: false,
+			contentType: false,
+			processData: false,
+			beforeSend: function() {
+				$(node).button('loading');
+			},
+			complete: function() {
+				$(node).button('reset');
+			},
+			success: function(json) {
+				$('.text-danger').remove();
+				if (json['error']) {
+					$(node).parent().find('input').after('<div class="text-danger">' + json['error'] + '</div>');
+				}
+				if (json['success']) {
+					alert(json['success']);
+					$(node).parent().find('input').attr('value', json['code']);
+				}
+			},
+			error: function(xhr, ajaxOptions, thrownError) {
+				alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+			}
+		});
+	});
+});
+//--></script>
+<script type="text/javascript">
+<!--
+$(window).load(function(){
+	$('#product_related').carouFredSel({
+        auto: false,
+        responsive: true,
+        width: '100%',
+        prev: '#prev_related',
+        next: '#next_related',
+        swipe: {
+        onTouch : true
+        },
+        items: {
+            width: 280,
+			height: 'auto',
+            visible: {
+            min: 1,
+            max: 3
+            }
+        },
+        scroll: {
+            direction : 'left',    //  The direction of the transition.
+            duration  : 1000   //  The duration of the transition.
+        }
+	});
+	$('#boss-image-additional').carouFredSel({
+        auto: false,
+        responsive: true,
+        width: '100%',
+        prev: '#prev_image_additional',
+        next: '#next_image_additional',
+        swipe: {
+        onTouch : true
+        },
+        items: {
+            width: 100,
+            height: 'auto',
+            visible: {
+            min: 1,
+            max:4
+            }
+        },
+        scroll: {
+            direction : 'left',    //  The direction of the transition.
+            duration  : 1000   //  The duration of the transition.
+        }
+    });
+	$('#boss-image-additional-zoom').carouFredSel({
+        auto: false,
+        responsive: true,
+        width: '100%',
+        prev: '#prev_image_additional_zoom',
+        next: '#next_image_additional_zoom',
+        swipe: {
+        onTouch : true
+        },
+        items: {
+            width: 100,
+            height: 'auto',
+            visible: {
+            min: 1,
+            max:4
+            }
+        },
+        scroll: {
+            direction : 'left',    //  The direction of the transition.
+            duration  : 1000   //  The duration of the transition.
+        }
+    });
+});
+function goToByScroll(id){
+    $('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+}
+//--></script>

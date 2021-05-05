@@ -1,0 +1,464 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Pages - Admin Dashboard UI Kit - Blank Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <script type="text/javascript">
+//<![CDATA[
+var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-56895490-1']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();//]]>
+    </script>
+    <script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"fbc4bb83061e960a779db06c1ee6b6c6",petok:"c4c6b33ddc72a0fc4e5f624f2b193386c2c86aba-1497559126-1800",zone:"revox.io",rocket:"0",apps:{"ga_key":{"ua":"UA-56895490-1","ga_bs":"1"}}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=85b614c0f6/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+    </script>
+    <link rel="apple-touch-icon" href="~/Assets/Template/pages/ico/60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="~/Assets/Template/pages/ico/76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="~/Assets/Template/pages/ico/120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="~/Assets/Template/pages/ico/152.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <style>
+        .form-group-default label, .breadcrumb a, .form-group label:not(.error),.panel .panel-heading .panel-title {
+            font-family: Verdana !important;
+        }
+
+    </style>
+    <link href="~/Assets/Template/assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+
+    <link href="~/Assets/Template/assets/plugins/bootstrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Assets/Template/assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="~/Assets/Template/assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="~/Assets/Template/assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="~/Assets/Template/assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" />
+    <link href="~/Assets/Template/assets/plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Assets/Template/assets/plugins/bootstrap-tag/bootstrap-tagsinput.css" rel="stylesheet" type="text/css" />
+    <link href="~/Assets/Template/assets/plugins/dropzone/css/dropzone.css" rel="stylesheet" type="text/css" />
+    <link href="~/Assets/Template/assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="~/Assets/Template/assets/plugins/summernote/css/summernote.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="~/Assets/Template/assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="~/Assets/Template/assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="~/Assets/Plugin/Flotcharts/examples.css" rel="stylesheet" />
+    <link href="~/Assets/Plugin/ToastMessage/build/toastr.min.css" rel="stylesheet" />
+    @RenderSection("css", false)
+
+    <link href="~/Assets/Template/pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+    <link class="main-stylesheet" href="~/Assets/Template/pages/css/pages.css" rel="stylesheet" type="text/css" />
+    <!--[if lte IE 9]>
+        <link href="~/Assets/Template/assets/plugins/codrops-dialogFx/dialog.ie.css" rel="stylesheet" type="text/css" media="screen" />
+        <![endif]-->
+    @{ 
+        var relativePath = UrlHandler.ResolveUrl("");
+    }
+
+    <script>
+        _mainConfig = {
+            relativePath: '@relativePath'
+        };
+    </script>
+</head>
+<body class="fixed-header sidebar-visible menu-pin">
+    <nav class="page-sidebar" data-pages="sidebar" style="transform:unset !important; -webkit-transform:unset !important; left: 0px !important">
+        <div class="sidebar-overlay-slide from-top" id="appMenu">
+            <div class="row">
+                <div class="col-xs-6 no-padding">
+                    <a href="#" class="p-l-40">
+                        <img src="~/Assets/Template/assets/img/demo/social_app.svg" alt="socail">
+                    </a>
+                </div>
+                <div class="col-xs-6 no-padding">
+                    <a href="#" class="p-l-10">
+                        <img src="~/Assets/Template/assets/img/demo/email_app.svg" alt="socail">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 m-t-20 no-padding">
+                    <a href="#" class="p-l-40">
+                        <img src="~/Assets/Template/assets/img/demo/calendar_app.svg" alt="socail">
+                    </a>
+                </div>
+                <div class="col-xs-6 m-t-20 no-padding">
+                    <a href="#" class="p-l-10">
+                        <img src="~/Assets/Template/assets/img/demo/add_more.svg" alt="socail">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-header">
+            <img src="~/Assets/Template/assets/img/logo_white.png" alt="logo" class="brand" data-src="@UrlHandler.ResolveUrl("/Assets/Template/assets/img/logo_white.png")" data-src-retina="@UrlHandler.ResolveUrl("/Assets/Template/assets/img/logo_white_2x.png")" width="78" height="22">
+            <div class="sidebar-header-controls">
+                <button type="button" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20" data-pages-toggle="">
+                    <i class="fa fa-angle-down fs-16"></i>
+                </button>
+                <button type="button" class="btn btn-link visible-lg-inline" data-toggle-pin="sidebar">
+                    <i class="fa fs-12"></i>
+                </button>
+            </div>
+        </div>
+        <div class="sidebar-menu">
+            <ul class="menu-items">
+                <li class="m-t-30 ">
+                    <a href="~/" class="detailed">
+                        <span class="title">Trang chủ</span>
+                        @*<span class="details">12 New Updates</span>*@
+                    </a>
+                    <span class="bg-success icon-thumbnail"><i class="pg-home"></i></span>
+                </li>
+                <li class="">
+                    <a href="~/Customer"><span class="title">Khách hàng</span></a>
+                    <span class="icon-thumbnail"><i class="pg-cupboard"></i></span>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="title">Sản phẩm</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <span class="icon-thumbnail"><i class="pg-bag"></i></span>
+                    <ul class="sub-menu">
+                        <li class="">
+                            <a href="~/Product">Danh sách</a>
+                            <span class="icon-thumbnail">l</span>
+                        </li>
+                        <li class="">
+                            <a href="~/Product/Create">Tạo mới</a>
+                            <span class="icon-thumbnail">c</span>
+                        </li>
+                        <li class="">
+                            <a href="~/Product/Statistic">Thống kê</a>
+                            <span class="icon-thumbnail">s</span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="title">Ngành hàng</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <span class="icon-thumbnail"><i class="pg-centeralign"></i></span>
+                    <ul class="sub-menu">
+                        <li class="">
+                            <a href="~/Category">Danh sách</a>
+                            <span class="icon-thumbnail">l</span>
+                        </li>
+                        <li class="">
+                            <a href="~/Category/Create">Tạo mới</a>
+                            <span class="icon-thumbnail">c</span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="title">Đơn hàng</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <span class="icon-thumbnail"><i class="pg-credit_card_line"></i></span>
+                    <ul class="sub-menu">
+                        <li class="">
+                            <a href="~/Order">Danh sách</a>
+                            <span class="icon-thumbnail">l</span>
+                        </li>
+                        <li class="">
+                            <a href="~/Order/Order_Statistics">Thống kê</a>
+                            <span class="icon-thumbnail">s</span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="title">Bài viết</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <span class="icon-thumbnail"><i class="pg-form"></i></span>
+                    <ul class="sub-menu">
+                        <li class="">
+                            <a href="~/News">Danh sách</a>
+                            <span class="icon-thumbnail">l</span>
+                        </li>
+                        <li class="">
+                            <a href="~/News/Create">Tạo mới</a>
+                            <span class="icon-thumbnail">c</span>
+                        </li>
+                    </ul>
+                </li>
+                @*<li>
+                    <a href="javascript:;">
+                        <span class="title">Customer</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <span class="icon-thumbnail"><i class="pg-calender"></i></span>
+                    <ul class="sub-menu">
+                        <li class="">
+                            <a href="calendar.html">Basic</a>
+                            <span class="icon-thumbnail">c</span>
+                        </li>
+                        <li class="">
+                            <a href="calendar_lang.html">Languages</a>
+                            <span class="icon-thumbnail">L</span>
+                        </li>
+                        <li class="">
+                            <a href="calendar_month.html">Month</a>
+                            <span class="icon-thumbnail">M</span>
+                        </li>
+                        <li class="">
+                            <a href="calendar_lazy.html">Lazy load</a>
+                            <span class="icon-thumbnail">La</span>
+                        </li>
+                        <li class="">
+                            <a href="http://pages.revox.io/dashboard/2.1.0/doc/#calendar" target="_blank">Documentation</a>
+                            <span class="icon-thumbnail">D</span>
+                        </li>
+                    </ul>
+                </li>*@
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </nav>
+    <div class="page-container ">
+        <div class="header ">
+            <div class="container-fluid relative">
+                <div class="pull-left full-height visible-sm visible-xs">
+                    <div class="header-inner">
+                        <a href="#" class="btn-link toggle-sidebar visible-sm-inline-block visible-xs-inline-block padding-5" data-toggle="sidebar">
+                            <span class="icon-set menu-hambuger"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="pull-center hidden-md hidden-lg">
+                    <div class="header-inner">
+                        @*<div class="brand inline">
+                            <img src="~/Assets/Template/assets/img/logo.png" alt="logo" data-src="~/Assets/Template/assets/img/logo.png" data-src-retina="~/Assets/Template/assets/img/logo_2x.png" width="78" height="22">
+                        </div>*@
+                    </div>
+                </div>
+                <div class="pull-right full-height visible-sm visible-xs">
+                    <div class="header-inner">
+                        <a href="#" class="btn-link visible-sm-inline-block visible-xs-inline-block" data-toggle="quickview" data-toggle-element="#quickview">
+                            <span class="icon-set menu-hambuger-plus"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pull-left sm-table hidden-xs hidden-sm">
+                <div class="header-inner">
+                    @*<div class="brand inline">
+                        <img src="~/Assets/Template/assets/img/logo.png" alt="logo" data-src="~/Assets/Template/assets/img/logo.png" data-src-retina="~/Assets/Template/assets/img/logo_2x.png" width="78" height="22">
+                    </div>*@
+                    @*<ul class="notification-list no-margin hidden-sm hidden-xs b-grey b-l b-r no-style p-l-30 p-r-20">
+                        <li class="p-r-15 inline">
+                            <div class="dropdown">
+                                <a href="javascript:;" id="notification-center" class="icon-set globe-fill" data-toggle="dropdown">
+                                    <span class="bubble"></span>
+                                </a>
+                                <div class="dropdown-menu notification-toggle" role="menu" aria-labelledby="notification-center">
+                                    <div class="notification-panel">
+                                        <div class="notification-body scrollable">
+                                            <div class="notification-item unread clearfix">
+                                                <div class="heading open">
+                                                    <a href="#" class="text-complete pull-left">
+                                                        <i class="pg-map fs-16 m-r-10"></i>
+                                                        <span class="bold">Carrot Design</span>
+                                                        <span class="fs-12 m-l-10">Admin</span>
+                                                    </a>
+                                                    <div class="pull-right">
+                                                        <div class="thumbnail-wrapper d16 circular inline m-t-15 m-r-10 toggle-more-details">
+                                                            <div>
+                                                                <i class="fa fa-angle-left"></i>
+                                                            </div>
+                                                        </div>
+                                                        <span class="time">few sec ago</span>
+                                                    </div>
+                                                    <div class="more-details">
+                                                        <div class="more-details-inner">
+                                                            <h5 class="semi-bold fs-16">
+                                                                “Apple’s Motivation - Innovation <br>
+                                                                distinguishes between <br>
+                                                                A leader and a follower.”
+                                                            </h5>
+                                                            <p class="small hint-text">
+                                                                Commented on john Smiths wall.
+                                                                <br> via pages framework.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="option" data-toggle="tooltip" data-placement="left" title="mark as read">
+                                                    <a href="#" class="mark"></a>
+                                                </div>
+                                            </div>
+                                            <div class="notification-item  clearfix">
+                                                <div class="heading">
+                                                    <a href="#" class="text-danger pull-left">
+                                                        <i class="fa fa-exclamation-triangle m-r-10"></i>
+                                                        <span class="bold">98% Server Load</span>
+                                                        <span class="fs-12 m-l-10">Take Action</span>
+                                                    </a>
+                                                    <span class="pull-right time">2 mins ago</span>
+                                                </div>
+                                                <div class="option">
+                                                    <a href="#" class="mark"></a>
+                                                </div>
+                                            </div>
+                                            <div class="notification-item  clearfix">
+                                                <div class="heading">
+                                                    <a href="#" class="text-warning-dark pull-left">
+                                                        <i class="fa fa-exclamation-triangle m-r-10"></i>
+                                                        <span class="bold">Warning Notification</span>
+                                                        <span class="fs-12 m-l-10">Buy Now</span>
+                                                    </a>
+                                                    <span class="pull-right time">yesterday</span>
+                                                </div>
+                                                <div class="option">
+                                                    <a href="#" class="mark"></a>
+                                                </div>
+                                            </div>
+                                            <div class="notification-item unread clearfix">
+                                                <div class="heading">
+                                                    <div class="thumbnail-wrapper d24 circular b-white m-r-5 b-a b-white m-t-10 m-r-10">
+                                                        <img width="30" height="30" data-src-retina="~/Assets/Template/assets/img/profiles/1x.jpg" data-src="~/Assets/Template/assets/img/profiles/1.jpg" alt="" src="~/Assets/Template/assets/img/profiles/1.jpg">
+                                                    </div>
+                                                    <a href="#" class="text-complete pull-left">
+                                                        <span class="bold">Revox Design Labs</span>
+                                                        <span class="fs-12 m-l-10">Owners</span>
+                                                    </a>
+                                                    <span class="pull-right time">11:00pm</span>
+                                                </div>
+                                                <div class="option" data-toggle="tooltip" data-placement="left" title="mark as read">
+                                                    <a href="#" class="mark"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="notification-footer text-center">
+                                            <a href="#" class="">Read all notifications</a>
+                                            <a data-toggle="refresh" class="portlet-refresh text-black pull-right" href="#">
+                                                <i class="pg-refresh_new"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="p-r-15 inline">
+                            <a href="#" class="icon-set clip "></a>
+                        </li>
+                        <li class="p-r-15 inline">
+                            <a href="#" class="icon-set grid-box"></a>
+                        </li>
+                    </ul>*@
+                    @*<a href="#" class="search-link" data-toggle="search"><i class="pg-search"></i>Type anywhere to <span class="bold">search</span></a>*@
+                </div>
+            </div>
+            <div class="pull-right">
+                <div class="visible-lg visible-md m-t-10">
+                    <div class="pull-left p-r-10 p-t-10 fs-16 font-heading">
+                        <span class="semi-bold">Admin</span>
+                    </div>
+                    <div class="dropdown pull-right">
+                        <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="thumbnail-wrapper d32 circular inline m-t-5">
+                                <img src="~/Assets/Template/assets/img/profiles/avatar.jpg" alt="" data-src="@UrlHandler.ResolveUrl("/Assets/Template/assets/img/profiles/avatar.jpg")" data-src-retina="@UrlHandler.ResolveUrl("/Assets/Template/assets/img/profiles/avatar_small2x.jpg")" width="32" height="32">
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu profile-dropdown" role="menu">
+                            <li class="bg-master-lighter" style="margin-top:0;">
+                                <a href="/Account/Logout" class="clearfix">
+                                    <span class="pull-left">Đăng xuất</span>
+                                    <span class="pull-right"><i class="pg-power"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-content-wrapper ">
+            <div class="content ">
+                <div class="jumbotron" data-pages="parallax">
+                    <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
+                        <div class="inner">
+                            <ul class="breadcrumb">
+                                <li>
+                                    <a href="/" class="active">Trang chủ</a>
+                                </li>
+                                @RenderSection("currentNavBar", false)
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                @RenderBody()
+            </div>
+            <div class="container-fluid container-fixed-lg footer">
+                <div class="copyright sm-text-center">
+                    <p class="small no-margin pull-left sm-pull-reset">
+                        <span class="hint-text">&copy;</span>
+                        <span class="font-montserrat">Được sở hữu trí tuệ bởi Phụ Kiện Giá Rẻ</span>.
+                    </p>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Assets/Template/assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+    <script src="~/Assets/Template/assets/plugins/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="~/Assets/Template/assets/plugins/modernizr.custom.js" type="text/javascript"></script>
+    <script src="~/Assets/Template/assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="~/Assets/Template/assets/plugins/bootstrapv3/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="~/Assets/Template/assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
+    <script src="~/Assets/Template/assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
+    <script src="~/Assets/Template/assets/plugins/jquery-bez/jquery.bez.min.js"></script>
+    <script src="~/Assets/Template/assets/plugins/jquery-ios-list/jquery.ioslist.min.js" type="text/javascript"></script>
+    <script src="~/Assets/Template/assets/plugins/jquery-actual/jquery.actual.min.js"></script>
+    <script src="~/Assets/Template/assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="~/Assets/Template/assets/plugins/select2/js/select2.full.min.js"></script>
+    <script type="text/javascript" src="~/Assets/Template/assets/plugins/classie/classie.js"></script>
+    <script src="~/Assets/Template/assets/plugins/switchery/js/switchery.min.js"></script>
+    <script src="~/Assets/Template/assets/plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+    <script type="text/javascript" src="~/Assets/Template/assets/plugins/jquery-autonumeric/autoNumeric.js"></script>
+    <script type="text/javascript" src="~/Assets/Template/assets/plugins/dropzone/dropzone.min.js"></script>
+    <script type="text/javascript" src="~/Assets/Template/assets/plugins/bootstrap-tag/bootstrap-tagsinput.min.js"></script>
+    <script type="text/javascript" src="~/Assets/Template/assets/plugins/jquery-inputmask/jquery.inputmask.min.js"></script>
+    <script src="~/Assets/Template/assets/plugins/bootstrap-form-wizard/js/jquery.bootstrap.wizard.min.js" type="text/javascript"></script>
+    <script src="~/Assets/Template/assets/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="~/Assets/Template/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="~/Assets/Template/assets/plugins/summernote/js/summernote.min.js" type="text/javascript"></script>
+    <script src="~/Assets/Template/assets/plugins/moment/moment.min.js"></script>
+    <script src="~/Assets/Template/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="~/Assets/Template/assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>
+    <script src="~/Assets/Template/assets/plugins/bootstrap-typehead/typeahead.bundle.min.js"></script>
+    <script src="~/Assets/Template/assets/plugins/bootstrap-typehead/typeahead.jquery.min.js"></script>
+    <script src="~/Assets/Template/assets/plugins/handlebars/handlebars-v4.0.5.js"></script>
+
+    <script src="~/Assets/Plugin/Flotcharts/jquery.flot.js"></script>
+    <script src="~/Assets/Plugin/Flotcharts/jquery.flot.categories.js"></script>
+    <script src="~/Assets/Plugin/ckfinder/ckfinder.js"></script>
+    <script src="~/Assets/Plugin/ckeditor/ckeditor.js"></script>
+    <script src="~/Assets/Js/jquery.twbsPagination.js"></script>
+    <script src="~/Assets/Js/mustache.js"></script>
+    <script src="~/Assets/Plugin/ToastMessage/build/toastr.min.js"></script>
+    <script src="~/Assets/Js/Controller/base.js"></script>
+    @RenderSection("scripts", false)
+    <script src="~/Assets/Template/pages/js/pages.min.js"></script>
+    @RenderSection("scripts_ex",false)
+    <script src="~/Assets/Template/assets/js/scripts.js" type="text/javascript"></script>
+    <script src="~/Assets/Template/assets/js/demo.js" type="text/javascript"></script>
+    <script>
+		 window.intercomSettings = {
+		   app_id: "xt5z6ibr"
+		 };
+		 function stopLoading(){
+		     $('.pace-activity').hide();
+		 }
+		 $(document).ready(function () {
+		     setTimeout(stopLoading, 2000);
+        });
+    </script>
+    <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/xt5z6ibr';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+</body>
+</html>

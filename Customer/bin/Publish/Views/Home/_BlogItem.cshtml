@@ -1,0 +1,33 @@
+﻿@using Customers.Ultilities
+@model Services.Models.News
+
+
+<div class="article_content">
+    <div class="image">
+        <a href="/News/Detail?id=@Model.Id"><img src="@Constant.AdminAddress@Model.Avatar" alt="@Model.Title" class="img-responsive" /><span class="banner_cat_effect"></span></a>
+        <div class="time-stamp">
+            <small class="time-date">
+                @Model.CreatedDate.Value.Day.ToString()
+            </small>
+            <small class="time-month">
+                @Model.CreatedDate.Value.Month.ToString()
+            </small>
+        </div>
+    </div>
+    <div class="article-detail">
+        <div class="article-name"><a href="/News/Detail?id=@Model.Id">@Model.Title</a></div>
+        <hr>
+        <div class="description">
+            <p>
+                @Model.Description
+            </p>
+        </div>
+        <div class="bt-comment">
+            <span class="post-by"><i class="fa fa-user"></i><span>Người đăng: <span>Admin</span></span></span>
+            @*<span class="bt-comment-count"><i class="fa fa-comments-o"></i><a href="pages/article.html"><span>4</span> Comment(s)</a></span>*@
+        </div>
+        <div class="read_more">
+            <a href="/News/Detail?id=@Model.Id" title="" class="btn-readmore"> Read More</a>
+        </div>
+    </div>
+</div>

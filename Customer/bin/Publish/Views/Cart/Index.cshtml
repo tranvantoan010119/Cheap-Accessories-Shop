@@ -1,0 +1,29 @@
+﻿@model List<Services.ViewModels.CartItemViewModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="/"><i class="fa fa-home"></i></a></li>
+        <li><a href="#">Giỏ hàng</a></li>
+    </ul>
+    <div class="row">
+        <div id="content" class="col-sm-12">
+           @if (Model != null)
+           {
+               {Html.RenderPartial("/Views/Cart/_cartBox.cshtml", Model);}
+           }
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+<script src="~/Assets/controller/cartController.js"></script> 
+}
+
+
+
+
+
+

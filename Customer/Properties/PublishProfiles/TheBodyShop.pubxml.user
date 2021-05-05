@@ -1,0 +1,857 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <_PublishTargetUrl>C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Customer\bin/Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/controller/base/base.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/controller/cartController.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/controller/homeController.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/bootstrap-select.css">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/bossblog.css">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/bossthemes/ie9.css">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_megamenu.css">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/arrow-L-h.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/arrow-L.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/arrow-R-h.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/arrow-R.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/arrowleft.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/arrowright.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/arrow_left.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/arrow_left2.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/arrow_right.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/arrow_right2.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/boxed_bgtile.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/bullet.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/bullets.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/bullets2.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/bullet_boxed.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/coloredbg.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/gridtile.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/gridtile_3x3.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/gridtile_3x3_white.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/gridtile_white.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/large_left.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/large_right.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/loader.gif">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/navigdots.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/navigdots_bgtile.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/shadow1.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/shadow2.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/shadow3.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/slide_panigation.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/slide_panigation_hover.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/small_left.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/small_left_boxed.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/small_right.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/small_right_boxed.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/timer.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/assets/transparent.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/css/settings.css">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/font/revicons.eot">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/font/revicons.svg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/font/revicons.ttf">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/font/revicons.woff">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/images/gradient/g30.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/boss_revolutionslider/images/gradient/g40.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/bt_stylesheet.css">
+      <publishTime>10/20/2020 21:33:32</publishTime>
+    </File>
+    <File Include="Assets/css/cs.animate.css">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/jquery.jgrowl.css">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/myCSS.css">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/responsive.css">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/css/stylesheet.css">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/image/catalog/bossblog/blogdetail_img.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bossblog/h1.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bossblog/h2.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bossblog/h3.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bossblog/h4.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bossblog/h5.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bossblog/h6.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bossblog/h7.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/9c4ad6e7-a667-46da-b58e-af721025bba2.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/about-us/about-us.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/about-us/member1.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/about-us/member2.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/about-us/member3.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/about-us/member4.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/accessories.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/american.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/baby.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/banner-1.png">
+      <publishTime>12/22/2019 19:57:08</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/banner-2.jpg">
+      <publishTime>12/22/2019 19:57:08</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/banner-category.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/banner1.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/banner2.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/banner3.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/banner_column_left.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/bgr-menu2.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/bgr-menu4.jpg">
+      <publishTime>07/20/2017 20:58:39</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/bg_banner.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/bg_home.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/cate1.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/cate2.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/cate3.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/cate4.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/cate5.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/cate6.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/decortica.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/desp_product.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/digistore.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/drug.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/dummy.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/eye.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/game.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/leather.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/leather2.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/Leather_Favicon.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/logo.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/master.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/modatica.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/skrill.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/slidershow1.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/slideshow-img1-1.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/slideshow-img1-2.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/slideshow-img2-1.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/slideshow-img2-1.png">
+      <publishTime>07/20/2017 20:58:39</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/slideshow-img2-2.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/slideshow-img2-2.png">
+      <publishTime>07/20/2017 20:58:39</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/slideshow1.jpg">
+      <publishTime>07/20/2017 20:58:39</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/slideshow2.jpg">
+      <publishTime>07/20/2017 20:58:39</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_leather/visa.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/1.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/2.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/3.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/4.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h1.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h10.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h11.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h12.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h13.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h14.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h15.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h16.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h17.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h18.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h19.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h2.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h20.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h21.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h22.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h3.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h4.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h5.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h6.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h7.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h8.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/catalog/bt_product/h9.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/flags/de.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/flags/gb.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/image/bgr-box.jpg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/image/decrease.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/image/icon-about1.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/image/icon-about2.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/image/icon-zoom.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/image/increase.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/image/pen.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/image/subscribe.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/images/Screenshot_44.png">
+      <publishTime>10/20/2020 20:54:18</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/bootstrap-select.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/bootstrap/css/bootstrap.min.css">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/bootstrap/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/bootstrap/js/bootstrap.min.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/bootstrap/js/Popoverrequirestooltip.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/carouFredSel-6.2.0.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/cloud-zoom/blank.png">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/cloud-zoom/cloud-zoom.1.0.3.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/common.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/cs.bossthemes.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/jquery.appear.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/jquery.DEPreLoad.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/jquery.jgrowl.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/jquery.revolution.min.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/jquery.smoothscroll.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/jquery.tools.min.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/tabs.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/touchSwipe.min.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/video/font/vjs.eot">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/video/font/vjs.svg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/video/font/vjs.ttf">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/video/font/vjs.woff">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/video/video.css">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/bossthemes/_/a.vimeocdn.com/js/froogaloop2.min.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/font-awesome/css/font-awesome.min.css">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/font-awesome/fonts/fontawesome-webfont.eot">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/font-awesome/fonts/fontawesome-webfont.svg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/font-awesome/fonts/fontawesome-webfont.ttf">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/font-awesome/fonts/fontawesome-webfont.woff">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/javascript/jquery/jquery-2.1.1.min.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/Plugin/Jquery-ui/jquery-ui.min.css">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/Plugin/Jquery-ui/jquery-ui.min.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/Plugin/Loading/hourglass.svg">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/Plugin/ToastMessage/build/toastr.css">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/Plugin/ToastMessage/build/toastr.js.map">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/Plugin/ToastMessage/build/toastr.min.css">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Assets/Plugin/ToastMessage/build/toastr.min.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="bin/Common.dll">
+      <publishTime>12/20/2020 15:06:18</publishTime>
+    </File>
+    <File Include="bin/Customers.dll">
+      <publishTime>12/20/2020 15:08:00</publishTime>
+    </File>
+    <File Include="bin/Dapper.dll">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/Services.dll">
+      <publishTime>12/20/2020 15:06:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>12/22/2019 22:16:03</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/Account/Index.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/Account/LeftSide.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>04/21/2020 22:12:48</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>04/21/2020 22:12:25</publishTime>
+    </File>
+    <File Include="Views/Account/TransactionHistory.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/Account/UpdateInfo.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/Cart/Index.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/Cart/Order.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/Cart/_cartBox.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/Category/Index.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/Category/_LeftSide.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/CheckOut/SearchOrder.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/CheckOut/Step1.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/CheckOut/Step2.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/CheckOut/Step3.cshtml">
+      <publishTime>12/20/2020 14:11:31</publishTime>
+    </File>
+    <File Include="Views/CheckOut/ViewOrder.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/Home/AboutUs.cshtml">
+      <publishTime>11/05/2020 20:33:14</publishTime>
+    </File>
+    <File Include="Views/Home/ContactUs.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/Home/FAQ.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>10/20/2020 21:31:04</publishTime>
+    </File>
+    <File Include="Views/Home/_BlogItem.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/Home/_Blogs.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/Home/_Menu.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/News/Detail.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/News/Index.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/News/LeftSide.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/Product/Detail.cshtml">
+      <publishTime>04/21/2020 22:03:17</publishTime>
+    </File>
+    <File Include="Views/Product/ListByCate.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/Product/Search.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/Product/_BestDeals.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/Product/_RelatedProducts.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>11/05/2020 20:34:26</publishTime>
+    </File>
+    <File Include="Views/Shared/_Product.cshtml">
+      <publishTime>04/21/2020 22:06:16</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>12/22/2019 22:16:02</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/20/2020 15:07:00</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

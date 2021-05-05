@@ -1,0 +1,12 @@
+﻿@model List<Services.Models.News>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td><img src="@UrlHandler.ResolveUrl(item.Avatar)" alt="@item.Title" style="width:45px; height:45px;" /></td>
+        <td>@item.Title</td>
+        <td><input type="checkbox" class="cbStatus" @(item.Published == true ? "checked" : "") data-id="@item.Id" /></td>
+        <td><a href="/News/Edit?id=@item.Id">Sửa</a></td>
+    </tr>
+}
+

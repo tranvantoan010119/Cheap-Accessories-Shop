@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Services.Models.News>
+
+@foreach (var item in Model)
+{
+    <div class="col-sm-4 col-xs-12">
+        @Html.Partial("/Views/Home/_BlogItem.cshtml", item);
+    </div>
+}

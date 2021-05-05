@@ -1,0 +1,218 @@
+﻿
+@{
+    ViewBag.Title = "Step2";
+}
+
+<!-- End #bt_header -->
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+        <li><a href="pages/checkout.html">Thanh toán</a></li>
+    </ul>
+    <div class="row">
+        <div id="content" class="col-sm-12">
+            <h1 class="title">Thanh toán</h1>
+            <div class="checkout">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Bước kế: Thông tin nhận hàng</h4>
+                        </div>
+                        <div id="collapse-shipping-address" class="panel-collapse collapse in" aria-expanded="true" style="" role="button">
+                            <div class="panel-body">
+                                <form class="form-horizontal">
+                                    <div class="radio btn-radio-address" style="display:none">
+                                        <label>
+                                            <input type="radio" checked="checked" value="existing" name="shipping_address">
+                                            Tôi muốn sử dụng địa chỉ hiện tại của tài khoản.
+                                        </label>
+                                    </div>
+                                    <div id="shipping-existing" class="form-group" style="display:none">
+                                        @if (ViewBag.ExistsSession != null)
+                                        {
+                                            <input type="hidden" value="@ViewBag.InfoInvalid" id="infoChecker" />
+                                            if (ViewBag.InfoInvalid != null)
+                                            {
+                                                <p id="gotoProfile"><br />Thông tin cá nhân chưa được hoàn thành. Để tiếp tục thanh toán quý khách vui lòng hoàn thành tại trang <a href="/Account/UpdateInfo?url=@Request.Url.AbsoluteUri" style="color:#d08862">thông tin cá nhân.</a></p>
+                                            }
+                                            else
+                                            {
+                                                var customerInfo = (Services.ViewModels.CustomerViewModel)ViewBag.Info;
+                                                <select class="form-control select-info" name="address_id">
+                                                    <option selected="selected" value="@customerInfo.GuidId">@customerInfo.FullName, @customerInfo.Address</option>
+                                                </select>
+                                                <div class="select-info">
+                                                    <label for="input-shipping-address" class="control-label">Lời nhắn</label>
+                                                    <div>
+                                                        <input type="text" class="form-control" value="" id="Note-existing" name="Note-existing">
+                                                    </div>
+                                                </div>
+                                            }
+                                        }
+                                        
+                                    </div>
+                                    <div class="radio btn-radio-address" style="display:none">
+                                        <label>
+                                            <input type="radio" value="new" name="shipping_address">
+                                            Tôi muốn sử dụng địa chỉ khác.
+                                        </label>
+                                    </div>
+                                    <br>
+                                    <div id="shipping-new">
+                                        <p class="hide" style="color:#a94442" id="validate-summary"></p>
+                                        <div class="form-group required">
+                                            <label for="input-shipping-firstname" class="control-label">Họ &amp; Tên</label>
+                                            <div>
+                                                <input type="text" class="form-control" id="FullName" value="" name="FullName">
+                                            </div>
+                                        </div>
+                                        <div class="form-group required">
+                                            <label for="input-shipping-company" class="control-label">Số điện thoại</label>
+                                            <div>
+                                                <input type="text" class="form-control" id="PhoneNo" value="" name="PhoneNo">
+                                            </div>
+                                        </div>
+                                        <div class="form-group required">
+                                            <label for="input-shipping-postcode" class="control-label">E-mail</label>
+                                            <div>
+                                                <input type="text" class="form-control" id="Email" value="" name="Email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group required">
+                                            <label for="input-shipping-address-1" class="control-label">Địa chỉ nhận hàng</label>
+                                            <div>
+                                                <input type="text" class="form-control" id="Address" value="" name="Address">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="input-shipping-address-1" class="control-label">Lời nhắn</label>
+                                            <div>
+                                                <input type="text" class="form-control" value="" id="Note" name="Note">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="buttons clearfix">
+                                        <input type="button" class="btn btn-primary" id="button-shipping-address" value="Tiếp tục">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer -->
+
+@section Scripts {
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var ssExists = '@ViewBag.ExistsSession'; // Is guest or member?
+
+            // handle toggle display information box
+            if(ssExists)
+            {
+                $('.btn-radio-address').css("display", "");
+                $('#shipping-new').css("display", "none");
+                $('#shipping-existing').css("display", "");
+            }
+            
+            // handle change option radio button
+            $('input[type=radio][name=shipping_address]').change(function () {
+                var chosen = $('input[type=radio][name=shipping_address]:checked').val();
+                if (chosen == "existing") {
+                    $('#shipping-existing').fadeIn("slow");
+                    $('#shipping-new').fadeOut("fast");
+                }
+                else {
+                    $('#shipping-new').fadeIn("slow");
+                    $('#shipping-existing').fadeOut("fast");
+                }
+            });
+            // handle continue button when click
+            $('#button-shipping-address').off('click').on('click', function (e) {
+                e.preventDefault();
+                var chosen = $('input[type=radio][name=shipping_address]:checked').val();
+                if (ssExists && chosen == "existing")
+                {
+                    if ($('#infoChecker').val() == "invalid")
+                    {
+                        toastr["error"]("Xin vui lòng cập nhật thông tin cá nhân trước khi tiếp tục thanh toán.");
+                    }
+                    else
+                    {
+                                                $.ajax({
+                            url: '/CheckOut/Step2',
+                            type: 'Post',
+                            data: { obj: null, type: "existing", note: $('#Note-existing').val() },
+                            beforeSend: function(){
+                                base.startLoading();
+                            },
+                            success: function (res) {
+                                base.stopLoading();
+                                if (res.status) {
+                                    setTimeout(function(){location.href = "/CheckOut/Step3"},2000);
+                                }
+                                else {
+                                    if (res.invalid) {
+                                        toastr["error"]("Vui lòng hoàn thành thông tin.");
+                                    }
+                                    else {
+                                        toastr["error"]("Có lỗi xảy ra.");
+                                        setTimeout(function () { location.href = "/Cart/Index"; }, 2000);
+                                        
+                                    }
+                                }
+                            },
+                        });
+                    }
+                }
+                else
+                {
+                    var data = {
+                        FullName: $('input#FullName').val(),
+                        Email: $('input#Email').val(),
+                        PhoneNo: $('input#PhoneNo').val(),
+                        Address: $('input#Address').val(),
+                        Note: $('input#Note').val()
+                    };
+                    $.ajax({
+                        url: '/CheckOut/Step2',
+                        type: 'Post',
+                        data: { obj: data },
+                        success: function(res)
+                        {
+                            if(!res.status)
+                            {
+                                $('#validate-summary').removeClass("hide");
+                                var html = '';
+                                $.each(res.data.split(";"), function (i, item) {
+                                    html += item + "</br>";
+                                });
+                                $('#validate-summary').html(html);
+                            }
+                            else
+                            {
+                                $('#validate-summary').addClass("hide");
+                                location.href = "/CheckOut/Step3";
+                            }
+                        }
+                    });
+                }
+            });
+
+            // checker and handle info is full ?
+            //if($('#infoChecker').val() == "invalid")
+            //{
+            //    $('.select-info').remove();
+            //}
+            //else
+            //{
+            //    $('#gotoProfile').remove();
+            //}
+        });
+    </script>
+}

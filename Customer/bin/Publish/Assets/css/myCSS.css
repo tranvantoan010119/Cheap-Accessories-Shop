@@ -1,0 +1,30 @@
+﻿.custom-color-msg {
+    color: #ef1e21;
+}
+
+.custom-span {
+    border-bottom: 0 !important;
+    padding-bottom: 5px !important;
+}
+
+.mega-menu > ul.nav > li > a ,.name a, h1,h2,h3,h4,h5,h6,.boss-blog-featured .article-name a, .bt-featured-pro .box-heading a
+, table.table thead td, .wishlist-info thead td, .cart-info thead td, #collapse-checkout-confirm td thead td 
+{
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#bt_header #logo {
+    margin:15px 0 !important;
+}
+
+div#powered {
+    padding-top:10px;
+    margin-bottom:0px !important
+}
+
+#imgLoading {
+    position:fixed;
+    top:50%;
+    left: 50%;
+    z-index:1000;
+}

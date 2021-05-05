@@ -1,0 +1,134 @@
+﻿@using Common
+@{
+    ViewBag.Title = "Home Page";
+    decimal totalRevenue = ViewBag.CountRevenue;
+}
+
+
+<div class="container-fluid container-fixed-lg">
+    <div class="panel panel-transparent">
+        <div class="panel-heading">
+            <div class="panel-title">
+                
+            </div>
+            <div class="export-options-container pull-right"></div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="panel-body" style="max-height:700px;">
+            @*<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">*@
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <i class="fa fa-money fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <p class="announcement-heading">@totalRevenue.labelFormatCurrency()</p>
+                                        <p class="announcement-text">Doanh thu</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer announcement-bottom">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            Chi tiết
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <i class="fa fa-arrow-circle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <i class="fa fa-barcode fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <p class="announcement-heading">@ViewBag.CountProduct</p>
+                                        <p class="announcement-text"> Sản phẩm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/Product">
+                                <div class="panel-footer announcement-bottom">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            Chi tiết
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <i class="fa fa-arrow-circle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <i class="fa fa-users fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <p class="announcement-heading">@ViewBag.CountCustomer</p>
+                                        <p class="announcement-text">Khách hàng</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/Customer">
+                                <div class="panel-footer announcement-bottom">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            Chi tiết
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <i class="fa fa-arrow-circle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <i class="fa fa-comments fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <p class="announcement-heading">@ViewBag.CountOrder</p>
+                                        <p class="announcement-text"> Đơn hàng!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/Order">
+                                <div class="panel-footer announcement-bottom">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            Chi tiết
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <i class="fa fa-arrow-circle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+            </div>
+        </div>
+    </div>
+
+</div>

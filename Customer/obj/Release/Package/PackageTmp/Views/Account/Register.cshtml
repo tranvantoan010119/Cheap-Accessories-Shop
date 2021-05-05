@@ -1,0 +1,89 @@
+﻿@model Services.ViewModels.CustomerViewModel
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="/"><i class="fa fa-home"></i></a></li>
+        <li><a href="/dang-ky">Đăng ký</a></li>
+    </ul>
+    <div class="row">
+        <div id="content" class="col-sm-12">
+            <h1 class="title">Đăng ký tài khoản</h1>
+            <p>Nếu bạn đã có tài khoản , vui lòng <a href="/dang-nhap">đăng nhập</a>.</p>
+            <form action="/Account/Register" method="post">
+                <div class="row">
+                    @Html.ValidationSummary("", new { @class = "custom-color-msg" })
+                    <div class="col-sm-6 col-xs-12">
+                        <fieldset id="account">
+                            <h3>Thông tin tài khoản</h3>
+                            <div class="form-group required" style="display: none;">
+                                <label class="control-label">Customer Group</label>
+                                <div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="customer_group_id" value="1" checked="checked" />
+                                            Default
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="control-label" for="input-firstname">E-Mail</label>
+                                <div>
+                                    @Html.TextBoxFor(m=>m.Email, new { @class="form-control", @autofocus="autofocus" })
+                                    @*<input type="text" name="Email" id="Email" class="form-control" />*@
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="control-label" for="input-lastname">Mật khẩu</label>
+                                <div>
+                                    @Html.PasswordFor(m => m.Password, new { @class = "form-control"})
+                                    @*<input type="password" name="Password" value="" id="input-password" class="form-control" />*@
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="control-label" for="input-email">Xác nhận mật khẩu</label>
+                                <div>
+                                    <input type="password" name="ConfirmPassword"  id="ConfirmPassword" class="form-control" />
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <fieldset id="address">
+                            <h3>Thông tin liên hệ</h3>
+                            <div class="form-group">
+                                <label class="control-label" for="input-company">Họ và Tên</label>
+                                <div>
+                                    @Html.TextBoxFor(m => m.FullName, new { @class = "form-control"})
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Số điện thoại</label>
+                                <div>
+                                    @Html.TextBoxFor(m => m.PhoneNo, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="input-address-2">Địa chỉ</label>
+                                <div>
+                                    @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </div>
+                </div>
+                <fieldset id="newsletter">
+                </fieldset>
+                <div class="buttons">
+                    <input type="submit" value="ĐĂNG KÝ" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div> 
+

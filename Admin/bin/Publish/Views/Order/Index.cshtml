@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "Danh sách đơn hàng";
+}
+
+@section css{
+    <style>
+        .table.table-condensed tbody tr td {
+            padding: 12px 5px !important;
+        }
+    </style>
+}
+
+@section scripts{
+    <script src="~/Assets/Js/Controller/Order.js"></script>
+}
+
+
+@section currentNavBar{
+    <li>
+        <a href="/Order" class="active">Đơn hàng</a>
+    </li>
+}
+
+<div class="container-fluid container-fixed-lg">
+    <div class="panel panel-transparent">
+        <div class="panel-heading">
+            <div class="panel-title">
+                Danh sách đơn hàng hàng
+            </div>
+            <div class="export-options-container pull-right"></div>
+            <div class="clearfix"></div>
+                   </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label>Mã đơn hàng</label>
+                    <input type="text" class="form-control" name="orderId" id="orderId">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Email</label>
+                    <input type="text" class="form-control" name="email" id="email">
+                                   </div>
+                <div class="form-group col-md-2">
+                    <label>Tìm kiếm</label>
+                    <span id="btnSearchOrder" class="form-control input-group-addon" style="border-left:1px solid rgba(0,0,0,0.07);color:rgba(98,98,98,0.9);">
+                        <i class="pg-search"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover table-condensed" id="condensedTable">
+                    <thead>
+                        <tr>
+                            <td>Mã đơn hàng</td>
+                            <td>Email</td>
+                            <td>Tổng tiền</td>
+                            <td>Trạng thái</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+            <div id="pager" class="pagination pagination-right">
+                <ul id="paginationUL"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade stick-up" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+        </div>
+    </div>
+
+</div>
+
+
+

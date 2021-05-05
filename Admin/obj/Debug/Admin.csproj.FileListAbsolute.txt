@@ -1,0 +1,636 @@
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\ApplicationInsights.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\roslyn\csc.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\roslyn\vbc.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Admin.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Admin.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Admin.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Microsoft.AI.Web.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\System.Web.Razor.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\WebGrease.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Microsoft.AI.Web.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\System.Web.Optimization.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\System.Web.Razor.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Antlr3.Runtime.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\obj\Debug\Admin.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\obj\Debug\Admin.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Services.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Dapper.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\EntityFramework.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Common.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Services.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\Dapper.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\EntityFramework.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\CKFinder.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\LeatherShop\Admin\bin\CKFinder.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\ApplicationInsights.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\roslyn\csc.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\roslyn\vbc.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Admin.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Admin.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Admin.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\CKFinder.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Microsoft.AI.Web.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Services.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\System.Web.Razor.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\WebGrease.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Dapper.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\EntityFramework.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Common.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Services.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\CKFinder.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Microsoft.AI.Web.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\System.Web.Optimization.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\System.Web.Razor.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Antlr3.Runtime.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\Dapper.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\bin\EntityFramework.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\obj\Debug\Admin.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Admin\obj\Debug\Admin.pdb
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\ApplicationInsights.config
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\roslyn\csc.exe
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\roslyn\vbc.exe
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Admin.dll.config
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Admin.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Admin.pdb
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\CKFinder.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Common.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Microsoft.AI.Web.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Services.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\WebGrease.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Dapper.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\EntityFramework.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Common.pdb
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Services.pdb
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\CKFinder.pdb
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Microsoft.AI.Web.xml
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\System.Web.Optimization.xml
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Antlr3.Runtime.pdb
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\Dapper.xml
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\bin\EntityFramework.xml
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\obj\Debug\Admin.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Admin\obj\Debug\Admin.pdb
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\ApplicationInsights.config
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\roslyn\csc.exe
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\roslyn\vbc.exe
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Admin.dll.config
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Admin.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Admin.pdb
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\CKFinder.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Common.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Microsoft.AI.Web.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Services.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\System.Web.Razor.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\WebGrease.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Dapper.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\EntityFramework.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Common.pdb
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Services.pdb
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\CKFinder.pdb
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Microsoft.AI.Web.xml
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\System.Web.Optimization.xml
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\System.Web.Razor.xml
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Antlr3.Runtime.pdb
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\Dapper.xml
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\bin\EntityFramework.xml
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\obj\Debug\Admin.dll
+C:\Users\Administrator\Downloads\VatTuHaTay\Admin\obj\Debug\Admin.pdb
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\ApplicationInsights.config
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\roslyn\csc.exe
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\roslyn\vbc.exe
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Admin.dll.config
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Admin.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Admin.pdb
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\CKFinder.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Common.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Microsoft.AI.Web.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Services.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\System.Web.Razor.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\WebGrease.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Dapper.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\EntityFramework.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Common.pdb
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Services.pdb
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\CKFinder.pdb
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Microsoft.AI.Web.xml
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\System.Web.Optimization.xml
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\System.Web.Razor.xml
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Antlr3.Runtime.pdb
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\Dapper.xml
+C:\Users\Administrator\Downloads\TheBody\Admin\bin\EntityFramework.xml
+C:\Users\Administrator\Downloads\TheBody\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\TheBody\Admin\obj\Debug\Admin.dll
+C:\Users\Administrator\Downloads\TheBody\Admin\obj\Debug\Admin.pdb
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\ApplicationInsights.config
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\roslyn\csc.exe
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\roslyn\vbc.exe
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Admin.dll.config
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Admin.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Admin.pdb
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\CKFinder.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Common.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Microsoft.AI.Web.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Services.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\WebGrease.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Dapper.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\EntityFramework.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Common.pdb
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Services.pdb
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\CKFinder.pdb
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Microsoft.AI.Web.xml
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\System.Web.Optimization.xml
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Antlr3.Runtime.pdb
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\Dapper.xml
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\bin\EntityFramework.xml
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\obj\Debug\Admin.dll
+C:\Users\Administrator\Desktop\Final_TheBody\TheBody\TheBody\Admin\obj\Debug\Admin.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\ApplicationInsights.config
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\roslyn\csc.exe
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\roslyn\vbc.exe
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\roslyn\VBCSCompiler.exe
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Admin.dll.config
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Admin.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Admin.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Antlr3.Runtime.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\CKFinder.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Common.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Microsoft.AI.Web.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Microsoft.ApplicationInsights.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Newtonsoft.Json.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Services.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\System.Web.Helpers.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\System.Web.Mvc.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\System.Web.Optimization.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\System.Web.Razor.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\System.Web.WebPages.Deployment.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\System.Web.WebPages.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\System.Web.WebPages.Razor.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\WebGrease.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Dapper.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\EntityFramework.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Common.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Services.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\CKFinder.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Microsoft.AI.Web.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Microsoft.ApplicationInsights.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\System.Web.Helpers.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\System.Web.Mvc.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\System.Web.Optimization.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\System.Web.Razor.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\System.Web.WebPages.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\System.Web.WebPages.Deployment.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\System.Web.WebPages.Razor.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Antlr3.Runtime.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Newtonsoft.Json.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\Dapper.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\bin\EntityFramework.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\obj\Debug\Admin.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\TheBody\TheBody\Admin\obj\Debug\Admin.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\ApplicationInsights.config
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\roslyn\csc.exe
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\roslyn\vbc.exe
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\roslyn\VBCSCompiler.exe
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Admin.dll.config
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Admin.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Admin.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Antlr3.Runtime.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\CKFinder.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Common.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Microsoft.AI.Web.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Microsoft.ApplicationInsights.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Newtonsoft.Json.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Services.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\System.Web.Helpers.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\System.Web.Mvc.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\System.Web.Optimization.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\System.Web.Razor.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\System.Web.WebPages.Deployment.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\System.Web.WebPages.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\System.Web.WebPages.Razor.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\WebGrease.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Dapper.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\EntityFramework.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Common.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Services.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\CKFinder.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Microsoft.AI.Web.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Microsoft.ApplicationInsights.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\System.Web.Helpers.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\System.Web.Mvc.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\System.Web.Optimization.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\System.Web.Razor.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\System.Web.WebPages.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\System.Web.WebPages.Deployment.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\System.Web.WebPages.Razor.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Antlr3.Runtime.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Newtonsoft.Json.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\Dapper.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\bin\EntityFramework.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\obj\Debug\Admin.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\TheBody\TheBody\Admin\obj\Debug\Admin.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\ApplicationInsights.config
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\roslyn\csc.exe
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\roslyn\vbc.exe
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\roslyn\VBCSCompiler.exe
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Admin.dll.config
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Admin.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Admin.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Antlr3.Runtime.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\CKFinder.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Common.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Microsoft.AI.Web.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Microsoft.ApplicationInsights.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Newtonsoft.Json.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Services.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\System.Web.Helpers.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\System.Web.Mvc.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\System.Web.Optimization.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\System.Web.Razor.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\System.Web.WebPages.Deployment.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\System.Web.WebPages.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\System.Web.WebPages.Razor.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\WebGrease.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Dapper.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\EntityFramework.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Common.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Services.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\CKFinder.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Microsoft.AI.Web.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Microsoft.ApplicationInsights.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\System.Web.Helpers.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\System.Web.Mvc.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\System.Web.Optimization.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\System.Web.Razor.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\System.Web.WebPages.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\System.Web.WebPages.Deployment.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\System.Web.WebPages.Razor.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Antlr3.Runtime.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Newtonsoft.Json.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Dapper.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\EntityFramework.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\obj\Debug\Admin.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\obj\Debug\Admin.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\bin\Services.dll.config
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\obj\Debug\Admin.csprojAssemblyReference.cache
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\obj\Debug\Admin.csproj.CoreCompileInputs.cache
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Admin\obj\Debug\Admin.csproj.CopyComplete
+D:\TheBody\Admin\bin\ApplicationInsights.config
+D:\TheBody\Admin\bin\roslyn\csc.exe
+D:\TheBody\Admin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TheBody\Admin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TheBody\Admin\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TheBody\Admin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TheBody\Admin\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TheBody\Admin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TheBody\Admin\bin\roslyn\System.Collections.Immutable.dll
+D:\TheBody\Admin\bin\roslyn\System.Reflection.Metadata.dll
+D:\TheBody\Admin\bin\roslyn\vbc.exe
+D:\TheBody\Admin\bin\roslyn\VBCSCompiler.exe
+D:\TheBody\Admin\bin\roslyn\VBCSCompiler.exe.config
+D:\TheBody\Admin\bin\Admin.dll.config
+D:\TheBody\Admin\bin\Admin.dll
+D:\TheBody\Admin\bin\Admin.pdb
+D:\TheBody\Admin\bin\Antlr3.Runtime.dll
+D:\TheBody\Admin\bin\CKFinder.dll
+D:\TheBody\Admin\bin\Common.dll
+D:\TheBody\Admin\bin\Microsoft.AI.Agent.Intercept.dll
+D:\TheBody\Admin\bin\Microsoft.AI.DependencyCollector.dll
+D:\TheBody\Admin\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\TheBody\Admin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\TheBody\Admin\bin\Microsoft.AI.Web.dll
+D:\TheBody\Admin\bin\Microsoft.AI.WindowsServer.dll
+D:\TheBody\Admin\bin\Microsoft.ApplicationInsights.dll
+D:\TheBody\Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TheBody\Admin\bin\Microsoft.Web.Infrastructure.dll
+D:\TheBody\Admin\bin\Newtonsoft.Json.dll
+D:\TheBody\Admin\bin\Services.dll
+D:\TheBody\Admin\bin\System.Web.Helpers.dll
+D:\TheBody\Admin\bin\System.Web.Mvc.dll
+D:\TheBody\Admin\bin\System.Web.Optimization.dll
+D:\TheBody\Admin\bin\System.Web.Razor.dll
+D:\TheBody\Admin\bin\System.Web.WebPages.Deployment.dll
+D:\TheBody\Admin\bin\System.Web.WebPages.dll
+D:\TheBody\Admin\bin\System.Web.WebPages.Razor.dll
+D:\TheBody\Admin\bin\WebGrease.dll
+D:\TheBody\Admin\bin\Dapper.dll
+D:\TheBody\Admin\bin\EntityFramework.dll
+D:\TheBody\Admin\bin\Common.pdb
+D:\TheBody\Admin\bin\Services.pdb
+D:\TheBody\Admin\bin\Services.dll.config
+D:\TheBody\Admin\bin\CKFinder.pdb
+D:\TheBody\Admin\bin\Microsoft.AI.DependencyCollector.xml
+D:\TheBody\Admin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\TheBody\Admin\bin\Microsoft.AI.Web.xml
+D:\TheBody\Admin\bin\Microsoft.AI.WindowsServer.xml
+D:\TheBody\Admin\bin\Microsoft.ApplicationInsights.xml
+D:\TheBody\Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TheBody\Admin\bin\System.Web.Helpers.xml
+D:\TheBody\Admin\bin\System.Web.Mvc.xml
+D:\TheBody\Admin\bin\System.Web.Optimization.xml
+D:\TheBody\Admin\bin\System.Web.Razor.xml
+D:\TheBody\Admin\bin\System.Web.WebPages.xml
+D:\TheBody\Admin\bin\System.Web.WebPages.Deployment.xml
+D:\TheBody\Admin\bin\System.Web.WebPages.Razor.xml
+D:\TheBody\Admin\bin\Antlr3.Runtime.pdb
+D:\TheBody\Admin\bin\Newtonsoft.Json.xml
+D:\TheBody\Admin\bin\Dapper.xml
+D:\TheBody\Admin\bin\EntityFramework.xml
+D:\TheBody\Admin\obj\Debug\Admin.csprojAssemblyReference.cache
+D:\TheBody\Admin\obj\Debug\Admin.csproj.CoreCompileInputs.cache
+D:\TheBody\Admin\obj\Debug\Admin.csproj.CopyComplete
+D:\TheBody\Admin\obj\Debug\Admin.dll
+D:\TheBody\Admin\obj\Debug\Admin.pdb

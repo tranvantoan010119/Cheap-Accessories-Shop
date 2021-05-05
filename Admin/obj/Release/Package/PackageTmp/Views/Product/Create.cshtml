@@ -1,0 +1,267 @@
+﻿@model Services.Models.Product
+@{
+    ViewBag.Title = "Tạo mới sản phẩm";
+}
+
+
+@section currentNavBar{
+    <li>
+        <a href="/Product" class="active">Sản phẩm</a>
+    </li>
+    <li>
+        <a href="#" class="active">Tạo mới</a>
+    </li>
+}
+
+<div class="container-fluid container-fixed-lg">
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <div class="panel panel-transparent">
+                <div class="panel-body">
+                    <form id="form-product-create" role="form">
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary("", new { @id = "modelErrors", @style = "color:#a94442" })
+
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default">
+                                    <label>Tên sản phẩm</label>
+                                    <input type="text" class="form-control" name="Name" id="Name" autofocus>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="form-group form-group-default">
+                                    <label>Mã sản phẩm</label>
+                                    <input type="text" class="form-control" name="Code" id="Code">
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="form-group form-group-default">
+                                    <label>Trạng thái</label>
+                                    <input type="checkbox" name="Published" checked id="Published">
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="form-group form-group-default">
+                                    <label>Set Hot</label>
+                                    <input type="checkbox" name="IsHot" id="IsHot">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix">
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default">
+                                    <label>Số lượng</label>
+                                    <input type="text" class="form-control" name="Quantity" id="Quantity">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default">
+                                    <label>Giá nhập</label>
+                                    <input type="text" class="form-control" name="UnitPrice" id="UnitPrice">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default">
+                                    <label>Giá niêm yết</label>
+                                    <input type="text" class="form-control" name="Price" id="Price">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix">
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default">
+                                    <label>Giá khuyến mại</label>
+                                    <input type="text" class="form-control" name="SaleOff" id="SaleOff">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default input-group">
+                                    <label>Ngày bắt đầu</label>
+                                    <input type="text" class="form-control date_picker" name="StartDate" id="datepicker-component-2">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default input-group">
+                                    <label>Ngày kết thúc</label>
+                                    <input type="text" class="form-control date_picker" name="EndDate" id="datepicker-component-3">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default input-group">
+                                    <label>Ảnh đại diện</label>
+                                    <input type="hidden" class="form-control" name="Avatar" id="Avatar">
+                                    <span class="input-group-addon hidden" style="padding: 0 !important" id="spanAvatar">
+                                        <img src="" width="50" height="50" id="imgAvatar" />
+                                    </span>
+                                    <span class="input-group-addon">
+                                        <a href="#" id="selectAvatar">Chọn Ảnh</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default input-group">
+                                    <label>Ảnh sản phẩm</label>
+                                    <input type="hidden" class="form-control" name="Images" id="Images">
+                                    <span class="input-group-addon hidden" style="padding: 0 !important" id="spanImages">
+
+                                    </span>
+                                    <span class="input-group-addon">
+                                        <a href="#" id="selectImages">Chọn Ảnh</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default">
+                                    <label>Mô tả ngắn</label>
+                                    <textarea type="text" style="height:80px;" class="form-control" name="Description" id="Description"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default">
+                                    <label>Danh mục</label>
+                                    <div id="Category" name="Category">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label>Nội dung chi tiết</label>
+                                    <textarea class="form-control" name="Detail" id="txtDetail"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <button class="btn btn-primary" type="submit">Save</button>
+                        <a class="btn btn-default" href="/Product">Back To List</a>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/Assets/Template/assets/js/form_elements.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            // bind list category
+            $.ajax({
+                url: _mainConfig.relativePath + '/Category/ListAll?exclude=1',
+                type: 'get',
+                contentType: 'application/json',
+                success: function (res) {
+                    var html = '';
+                    $.each(res.data, function (i, item) {
+                        html += "<input type=\"checkbox\" class=\"cbCategory\" id=" + item.Id + " value=" + item.Id + ">" + item.Name + "</input></br>";
+                    });
+                    $('div#Category').html(html);
+                }
+            });
+
+            // ckfinder
+            $('#selectAvatar').on('click', function (e) {
+                e.preventDefault();
+                var finder = new CKFinder();
+                finder.selectActionFunction = function (url) {
+                    $('input#Avatar').val(url);
+                    $('img#imgAvatar').attr('src', url);
+                    $('span#spanAvatar').removeClass("hidden");
+                };
+                finder.popup();
+            });
+
+            $('#selectImages').on('click', function (e) {
+                e.preventDefault();
+                var finder = new CKFinder();
+                finder.selectActionFunction = function (url) {
+                    $('input#Images').val($('input#Images').val() + url + ";");
+                    $('span#spanImages').append("<img src=" + url + " width=\"50\" height=\"50\" />");
+                    $('span#spanImages').removeClass("hidden");
+                };
+                finder.popup();
+            });
+
+            // ckeditor
+            var editor = CKEDITOR.replace('txtDetail', {
+                customConfig: '/Assets/Plugin/ckeditor/config.js',
+                htmlEncodeOutput: true
+            });
+
+            // submit form
+            $('#form-product-create').off('submit').on('submit', function (e) {
+                e.preventDefault();
+                var data = {
+                    Name: $('input#Name').val(),
+                    Code: $('input#Code').val(),
+                    Description: $('textarea#Description').val(),
+                    Detail: CKEDITOR.instances['txtDetail'].getData(),
+                    Avatar: $('input#Avatar').val(),
+                    Images: $('input#Images').val(),
+                    Quantity: $('input#Quantity').val(),
+                    UnitPrice: $('input#UnitPrice').val(),
+                    Price: $('input#Price').val(),
+                    SaleOff: $('input#SaleOff').val(),
+                    StartDate: $('input#datepicker-component-2').val(),
+                    EndDate: $('input#datepicker-component-3').val(),
+                    Published: $('input#Published').is(':checked'),
+                    IsHot: $('input#IsHot').is(':checked'),
+                    Categories: ""
+                };
+
+                $('.cbCategory:checkbox:checked').each(function () {
+                    data.Categories += $(this).val() + ";";
+                });
+                console.log(data);
+                $.ajax({
+                    url: _mainConfig.relativePath + '/Product/Create',
+                    data: JSON.stringify(data),
+                    type: 'post',
+                    contentType: 'application/json',
+                    success: function (res) {
+                        if (res.status) {
+                            toastr["success"]("Cập nhật thành công.");
+                            setTimeout(function () { location.href = "/Product" }, 2500);
+                        }
+                        else {
+                            toastr["error"]("Có lỗi xảy ra, vui lòng thử lại.");
+                            if (res.msg != null) {
+                                var html = "";
+                                $.each(res.msg, function (i, item) {
+                                    html += item.ErrorMessage + "</br>";
+                                });
+                                $('#modelErrors').html(html);
+                            }
+                        }
+                    },
+                    error: function (err) {
+                        toastr["error"]("Có lỗi xảy ra, vui lòng thử lại.");
+                        setTimeout(function () { location.reload() }, 2500);
+                    }
+                });
+            });
+
+        });
+    </script>
+}

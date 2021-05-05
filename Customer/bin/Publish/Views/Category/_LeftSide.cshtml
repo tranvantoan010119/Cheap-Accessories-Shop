@@ -1,0 +1,26 @@
+﻿@model List<Services.ViewModels.CategoryViewModel>
+
+<div class="box bt-category not-animated" data-animate="fadeInLeft" data-delay="200">
+    <div class="box-heading"><h2>Danh mục</h2></div>
+    <div class="box-content">
+        <div class="box-category" id="boss-category">
+            <ul class="box-category">
+                @foreach (var item in Model.Where(x => x.ParentId == 1))
+                {
+                    <li>
+                        <a href="/Category/Index?Id=@item.Id" class="list-group-item">@item.Name (@item.NumberOfProduct)</a>
+                        <ul class="item_child">
+                            @foreach (var jtem in Model.Where(x => x.ParentId != 1))
+                            {
+                                if (jtem.ParentId == item.Id)
+                                {
+                                    <li><a href="/Category/Index?Id=@jtem.Id" class="list-group-item">@jtem.Name (@jtem.NumberOfProduct)</a></li>
+                                }
+                            }
+                        </ul>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>

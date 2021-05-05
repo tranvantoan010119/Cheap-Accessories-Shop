@@ -1,0 +1,165 @@
+﻿@using Common
+@model List<Services.ViewModels.CartItemViewModel>
+@{
+    ViewBag.Title = "Step3";
+    decimal total = 0;
+    decimal lastestTotal = 0;
+}
+
+<!-- End #bt_header -->
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+        <li><a href="pages/checkout.html">Checkout</a></li>
+    </ul>
+    <div class="row">
+        <div id="content" class="col-sm-12">
+            <h1 class="title">Thanh Toán</h1>
+            <div class="checkout">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Hoàn thành: Xác nhận thanh toán</h4>
+                        </div>
+                        <div id="collapse-checkout-confirm" class="panel-collapse collapse in" aria-expanded="true" style="" role="button">
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-default">
+                                        <thead>
+                                            <tr>
+                                                <td class="text-left">Sản phẩm</td>
+                                                <td class="text-left">Giá</td>
+                                                <td class="text-right">Giá khuyến mại</td>
+                                                <td class="text-right">Số lượng</td>
+                                                <td class="text-right">Tổng</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model)
+                                            {
+                                                lastestTotal += item.LastAmount * item.quantity;
+                                                total += item.Amount * item.quantity;
+                                                <tr>
+                                                    <td class="name">
+                                                        @item.productName
+                                                    </td>
+                                                    <td class="text-left">@item.Amount.labelFormatCurrency()</td>
+                                                    <td class="text-right">@item.LastAmount.labelFormatCurrency()</td>
+                                                    <td class="text-right">@item.quantity</td>
+                                                    <td class="text-right">@((item.LastAmount * item.quantity).labelFormatCurrency())</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td class="left" colspan="4">Chi phí:</td>
+                                                <td class="right">@total.labelFormatCurrency()</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left" colspan="4">Tiết kiệm:</td>
+                                                <td class="right">- @((total - lastestTotal).labelFormatCurrency())</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left" colspan="4">Tổng tiền:</td>
+                                                <td class="right">@lastestTotal.labelFormatCurrency()</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <div class="radio" >
+                                    <label>
+                                        <input type="radio" value="0" checked name="payment_method">
+                                        Thanh toán khi nhận hàng
+                                    </label>
+                                    <br />
+                                    <label>
+                                        <input type="radio" value="1" name="payment_method">
+                                        Thanh toán online
+                                    </label>
+                                </div>
+                                <div class="buttons">
+                                    <div class="pull-right">
+                                        <input type="button" class="btn btn-primary" id="button-confirm" value="Xác nhận thanh toán">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer -->
+
+@section Scripts{
+<script src="~/Assets/Plugin/crypto-js/core.min.js"></script>
+<script src="~/Assets/Plugin/crypto-js/md5.js"></script>
+    <script>
+        $(document).ready(function () {
+            var totalPrice = @lastestTotal;
+            $('#button-confirm').off('click').on('click', function (e) {
+                var payment_method = $('input[name=payment_method]:checked').val()
+                $.ajax({
+                    url: '/CheckOut/CheckOut',
+                    type: 'post',
+                    beforeSend: function () {
+                        base.startLoading();
+                    },
+                    success: function (res) {
+                        base.stopLoading();
+                        if (res.status) {
+                            localStorage.removeItem("cart");
+                            if (payment_method == 1) {
+                                toastr["success"]('Tạo đơn hàng thành công, Hệ thống sẽ tự động chuyển sang trang thanh toán.');
+                                var buyerInfo = res.ssAddress.FullName + '*|*' + res.ssAddress.Email + '*|*' + res.ssAddress.PhoneNo + '*|*' + res.ssAddress.Address;
+
+                                var urlNganLuong = 'https://sandbox.nganluong.vn:8088/nl35/checkout.php';
+                                urlNganLuong += '?merchant_site_code=49840';
+                                urlNganLuong += '&return_url=' + location.origin + '/CheckOut/PaymentSuccess';
+                                urlNganLuong += '&receiver=haubv95@gmail.com';
+                                urlNganLuong += '&transaction_info=' + res.email;
+                                urlNganLuong += '&order_code=' + res.orderId;
+                                urlNganLuong += '&price=' + totalPrice;
+                                urlNganLuong += '&currency=vnd';
+                                urlNganLuong += '&quantity=1';
+                                urlNganLuong += '&tax=0';
+                                urlNganLuong += '&discount=0';
+                                urlNganLuong += '&fee_cal=0';
+                                urlNganLuong += '&fee_shipping=0';
+                                urlNganLuong += '&buyer_info=' + buyerInfo;
+                                urlNganLuong += '&lang=vi';
+                                urlNganLuong += '&secure_code=' + CryptoJS.MD5('49840' + ' '
+                                                                                +  location.origin +'/CheckOut/PaymentSuccess' + ' '
+                                                                                + 'haubv95@gmail.com' + ' '
+                                                                                + res.email + ' '
+                                                                                + res.orderId + ' '
+                                                                                + totalPrice + ' '
+                                                                                + 'vnd' + ' '
+                                                                                + 1 + ' '
+                                                                                + 0 + ' '
+                                                                                + 0 + ' '
+                                                                                + 0 + ' '
+                                                                                + 0 + ' '
+                                                                                + '' + ' '
+                                                                                + buyerInfo + ' '
+                                                                                + '' + ' '
+                                                                                + 'a80f55d4eabbaf5666d53418dc7058c3'
+                                                                                );
+                                urlNganLuong += '&cancel_url=' + encodeURIComponent(location.origin + '/CheckOut/ViewOrder?orderId=' + res.orderId + '&email=' + res.email);
+                                setTimeout(function () { location.href = urlNganLuong; }, 3000);
+                            }
+                            else {
+                                toastr["success"]('Thanh toán thành công.');
+                                setTimeout(function () { location.href = '/CheckOut/ViewOrder?orderId=' + res.orderId + '&email=' + res.email + ''; }, 2000);
+                            }
+                        }
+                        else {
+                            toastr["error"]('Thanh toán thất bại, Vui lòng thử lại.');
+                        }
+                    }
+                });
+            });
+        });
+    </script>    
+}

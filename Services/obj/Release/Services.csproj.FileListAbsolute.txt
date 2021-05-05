@@ -1,0 +1,36 @@
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Services\bin\Release\Services.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Services\bin\Release\Services.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Services\bin\Release\Services.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Services\bin\Release\Dapper.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Services\bin\Release\EntityFramework.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Services\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Services\bin\Release\Dapper.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Services\bin\Release\EntityFramework.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Services\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Services\obj\Release\Services.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Services\obj\Release\Services.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\TheBodyShop\Services\obj\Release\Services.pdb
+C:\Users\Administrator\Desktop\VatTuHaTay\Services\bin\Release\Services.dll.config
+C:\Users\Administrator\Desktop\VatTuHaTay\Services\bin\Release\Services.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Services\bin\Release\Services.pdb
+C:\Users\Administrator\Desktop\VatTuHaTay\Services\bin\Release\Dapper.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Services\bin\Release\EntityFramework.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Services\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Services\bin\Release\Dapper.xml
+C:\Users\Administrator\Desktop\VatTuHaTay\Services\bin\Release\EntityFramework.xml
+C:\Users\Administrator\Desktop\VatTuHaTay\Services\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\VatTuHaTay\Services\obj\Release\Services.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VatTuHaTay\Services\obj\Release\Services.dll
+C:\Users\Administrator\Desktop\VatTuHaTay\Services\obj\Release\Services.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Services\bin\Release\Services.dll.config
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Services\bin\Release\Services.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Services\bin\Release\Services.pdb
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Services\bin\Release\Dapper.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Services\bin\Release\EntityFramework.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Services\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Services\bin\Release\Dapper.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Services\bin\Release\EntityFramework.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Services\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Services\obj\Release\Services.csprojResolveAssemblyReference.cache
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Services\obj\Release\Services.dll
+C:\Users\bvhau\Downloads\Compressed\TrangSuc\BanSach\WebBanSach\TheBody\Services\obj\Release\Services.pdb

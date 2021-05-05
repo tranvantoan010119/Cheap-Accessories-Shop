@@ -1,0 +1,16 @@
+﻿<div class="bt-box box-search box">
+    <div class="box-content" style="padding-top:0">
+        <form id="frmSearchBlog" action="/News/Index" method="get">
+            <div id="blogsearch" class="input-group">
+                <input type="text" name="keyword" value="@ViewBag.keyword" placeholder="Tìm kiếm bài viết" class="form-control" />
+                <span class="input-group-btn">
+                    <a href="#" onclick="$('#frmSearchBlog').submit()" class="btn btn-default btn-lg"><i class="fa fa-search"></i></a>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="bt-featured box">
+    <div class="box-heading"><h2>Giảm giá nhiều nhất</h2></div>
+    @{Html.RenderAction("BestDeals", "Product"); }
+</div>

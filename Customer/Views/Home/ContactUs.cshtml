@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Liên Hệ";
+}
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+        <li><a href="pages/contactus.html">Liên Hệ</a></li>
+    </ul>
+    <div class="row">
+        <div id="content" class="col-sm-12">
+            <form class="form-horizontal" action="/Home/ContactUs" method="post">
+                <fieldset>
+                    <h3>Form Liên Hệ</h3>
+                    @Html.ValidationSummary("", new { @class="custom-color-msg" })
+                    <div class="form-group required">
+                        <label class="control-label" for="input-name">Họ &amp; Tên</label>
+                        <div>
+                            <input type="text" name="FullName" value="" id="FullName" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group required">
+                        <label class="control-label" for="input-email">E-Mail</label>
+                        <div>
+                            <input type="text" name="Email" value="" id="Email" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group required">
+                        <label class="control-label" for="input-name">Tiêu Đề</label>
+                        <div>
+                            <input type="text" name="Title" value="" id="Title" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group required">
+                        <label class="control-label" for="input-enquiry">Nội Dung</label>
+                        <div>
+                            <textarea name="Content" rows="10" id="Content" class="form-control" style="min-height:unset"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="buttons">
+                    <div>
+                        <input class="btn btn-primary" type="submit" value="Gửi Liên Hệ" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<input type="hidden" id="hasMsg" value="@ViewBag.msg" />
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            var msg = $('input#hasMsg').val();
+            if (msg != "")
+                toastr["success"](msg);
+        });
+    </script>    
+    
+}

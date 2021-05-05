@@ -1,0 +1,44 @@
+﻿@model List<Services.Models.Category>
+
+<div id="bt_mainmenu" class="col-sm-9 pull-left">
+    <a class="open-panel"><i class="fa fa-bars"></i></a>
+    <nav class="mega-menu">
+        <a class="close-panel"><i class="fa fa-times-circle"></i></a>
+        <ul class="nav nav-pills">
+            <li class="parent">
+                <a href="/">Trang chủ</a>
+            </li>
+            @foreach (var item in Model.Where(x => x.ParentId == 1))
+            {
+                <li class="parent">
+                    @if (!Model.Any(x => x.ParentId == item.Id))
+                    {
+                        <a href="/Category/Index?Id=@item.Id">@item.Name</a>
+                    }
+                    else
+                    {
+                        <p class="plus visible-xs">+</p>
+                        <a href="/Category/Index?Id=@item.Id">@item.Name</a>
+                        <div class="dropdown drop-grid-6-1">
+                            <div class="menu-row row-col-1" style="background-image:url(/Assets/images/catalog/bt_leather/bgr-menu4.jpg)">
+                                <div class="menu-column row-grid-1">
+                                    <!-- html-->
+                                    <div class="staticblock">
+                                        <div class="bt-blog-page">
+                                            <ul>
+                                                @foreach (var jtem in Model.Where(x => x.ParentId == item.Id))
+                                                {
+                                                    <li><a title="Blog full width" href="/Category/Index?Id=@jtem.Id">@jtem.Name</a></li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </li>
+            }
+        </ul>
+    </nav>
+</div>

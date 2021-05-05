@@ -1,0 +1,98 @@
+﻿@using Common
+@model Services.ViewModels.OrderViewModel
+@{
+    ViewBag.Title = "ViewOrder";
+}
+
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="/"><i class="fa fa-home"></i></a></li>
+        <li><a href="#">Chi tiết đơn hàng</a></li>
+    </ul>
+    @if (Model != null)
+    {
+        <div class="row">
+            <div class="col-sm-12">
+                                <div class="checkout">
+                    <div class="panel-group" id="accordion" style="margin-bottom:0">
+                        <div class="panel panel-default">
+                            <div id="collapse-checkout-option" class="panel-collapse collapse in" aria-expanded="true" style="" role="button">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p><b>Mã đơn hàng:</b> @Model.order.Id</p>
+                                            <p><b>Tình trạng:</b> @Model.order.Status.getOrderStatusName()</p>
+                                            <p><b>Thanh toán:</b> @Model.order.Payment.getOrderPaymentName()</p>
+                                            <p><b>Ngày đặt hàng:</b> @Model.order.Date.convertDateToString()</p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p><b>Khách hàng:</b> @Model.addressDelivery.FullName</p>
+                                            <p><b>Số điện thoại:</b> @Model.addressDelivery.PhoneNo</p>
+                                            <p><b>Email:</b> @Model.addressDelivery.Email</p>
+                                            <p><b>Địa chỉ:</b> @Model.addressDelivery.Address</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="checkout">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default" style="margin-top:0">
+                            <div id="collapse-checkout-confirm" class="panel-collapse collapse in" aria-expanded="true" style="" role="button">
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-default">
+                                            <thead>
+                                                <tr>
+                                                    <td class="text-left">Sản phẩm</td>
+                                                    <td class="text-right">Giá</td>
+                                                    <td class="text-right">Số lượng</td>
+                                                    <td class="text-right">Tổng</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (var item in Model.listOrderItem)
+                                                {
+                                                    <tr>
+                                                        <td class="name">
+                                                            @item.ProductName
+                                                        </td>
+                                                        <td class="text-right">@item.LastPrice.GetValueOrDefault().labelFormatCurrency()</td>
+                                                        <td class="text-right">@item.Quantity</td>
+                                                        <td class="text-right">@((item.LastPrice.GetValueOrDefault() * item.Quantity).labelFormatCurrency())</td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td class="left" colspan="3">Tổng tiền:</td>
+                                                    <td class="right">@Model.order.TotalAmount.GetValueOrDefault().labelFormatCurrency()</td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                    <div class="buttons">
+                                        <div class="pull-left">
+                                            <a href="/" class="btn btn-primary" id="button-confirm">Trang chủ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <p>Không tìm thấy đơn hàng.</p>
+    }
+
+</div>

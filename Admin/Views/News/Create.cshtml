@@ -1,0 +1,150 @@
+﻿@model Services.Models.News
+@{
+    ViewBag.Title = "Tạo mới tin tức";
+}
+
+
+@section currentNavBar{
+    <li>
+        <a href="/News" class="active">Tin tức</a>
+    </li>
+    <li>
+        <a href="#" class="active">Tạo mới</a>
+    </li>
+}
+
+<div class="container-fluid container-fixed-lg">
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <div class="panel panel-transparent">
+                <div class="panel-body">
+                    <form id="form-news-create" role="form">
+                        @Html.ValidationSummary("", new { style = "color:#a94442" })
+                        @Html.ValidationSummary("", new { @id = "modelErrors", @style = "color:#a94442" })
+                        <div class="row clearfix">
+                            <div class="col-sm-7">
+                                <div class="form-group form-group-default">
+                                    <label>Tiêu đề</label>
+                                    <input type="text" class="form-control" name="Title" id="Title" autofocus>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="form-group form-group-default">
+                                    <label>Xuất bản</label>
+                                    <input style="margin:0px;" type="checkbox" name="Published" checked id="Published">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group form-group-default input-group">
+                                    <label>Ảnh đại diện</label>
+                                    <input type="hidden" class="form-control" name="Avatar" id="Avatar">
+                                    <span class="input-group-addon hidden" style="padding: 0 !important" id="spanAvatar">
+                                        <img src="" width="50" height="50" id="imgAvatar" />
+                                    </span>
+                                    <span class="input-group-addon">
+                                        <a href="#" id="selectAvatar">Chọn Ảnh</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-12">
+                                <div class="form-group form-group-default">
+                                    <label>Mô tả ngắn</label>
+                                    <textarea type="text" style="height:80px;" class="form-control" name="Description" id="Description"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label>Nội dung chi tiết</label>
+                                    <textarea class="form-control" name="Detail" id="txtDetail"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <button class="btn btn-primary" type="submit">Save</button>
+                        <a class="btn btn-default" href="/News">Back To List</a>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/Assets/Template/assets/js/form_elements.js"></script>
+    <script>
+        $(document).ready(function () {
+            // ckfinder
+            $('#selectAvatar').on('click', function (e) {
+                e.preventDefault();
+                var finder = new CKFinder();
+                finder.selectActionFunction = function (url) {
+                    $('input#Avatar').val(url);
+                    $('img#imgAvatar').attr('src', url);
+                    $('span#spanAvatar').removeClass("hidden");
+                };
+                finder.popup();
+            });
+
+            // ckeditor
+            var editor = CKEDITOR.replace('txtDetail', {
+                customConfig: '/Assets/Plugin/ckeditor/config.js',
+                htmlEncodeOutput: true
+            });
+
+            $('#cbPublished').on('change', function () {
+                if(this.checked)
+                {
+                    $('#Published').val(true);
+                }
+                else
+                {
+                    $('#Published').val(false);
+                }
+            });
+             //submit form
+            $('#form-news-create').off('submit').on('submit', function (e) {
+                e.preventDefault();
+                var data = {
+                    Title: $('input#Title').val(),
+                    Description: $('textarea#Description').val(),
+                    Detail: CKEDITOR.instances['txtDetail'].getData(),
+                    Avatar: $('input#Avatar').val(),
+                    Published: $('input#Published').is(':checked'),
+                };
+
+                console.log(data);
+                $.ajax({
+                    url: _mainConfig.relativePath + '/News/Create',
+                    data: JSON.stringify(data),
+                    type: 'post',
+                    contentType: 'application/json',
+                    success: function (res) {
+                        if (res.status)
+                        {
+                            toastr["success"]("Cập nhật thành công.");
+                            setTimeout(function () { location.href = "/News" }, 2500);
+                        }
+                        else
+                        {
+                            toastr["error"]("Có lỗi xảy ra, vui lòng thử lại.");
+                            if (res.msg != null) {
+                                var html = "";
+                                $.each(res.msg, function (i, item) {
+                                    html += item.ErrorMessage + "</br>";
+                                });
+                                $('#modelErrors').html(html);
+                            }
+                        }
+                    }
+                });
+            })
+        });
+    </script>
+}

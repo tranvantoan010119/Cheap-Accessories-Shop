@@ -1,0 +1,56 @@
+﻿@using Common
+@model Services.ViewModels.OrderViewModel
+<div class="modal-header clearfix text-left">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+        <i class="pg-close fs-14"></i>
+    </button>
+    <h5><span class="semi-bold">Đơn hàng @Model.order.Id</span></h5>
+    <p>Tài khoản: <span class="semi-bold">@Model.order.Email</span></p>
+    <h5><span class="semi-bold">Địa chỉ giao hàng</span></h5>
+    <div class="col-sm-6">
+        <p>Khách hàng: <span class="semi-bold">@Model.addressDelivery.FullName</span></p>
+        <p>Điện thoại: <span class="semi-bold">@Model.addressDelivery.PhoneNo</span></p>
+        <p>Tình trạng: <span class="semi-bold">@Model.order.Status.getOrderStatusName()</span></p>
+           </div>
+    <div class="col-sm-6">
+        @if (Model.addressDelivery.Note != null)
+        {
+            <p>Ghi chú: <span class="semi-bold">@Model.addressDelivery.Note</span></p>
+        }
+        <p>Email: <span class="semi-bold">@Model.addressDelivery.Email</span></p>
+        <p>Địa chỉ: <span class="semi-bold">@Model.addressDelivery.Address</span></p>
+    </div>
+</div>
+
+<div class="modal-body">
+    <h5><span class="semi-bold">Danh sách sản phẩm</span></h5>
+    <div class="table-responsive">
+        <table class="table table-condensed" style="table-layout:unset;margin-top:0;" id="condensedTable">
+            <thead>
+                <tr>
+                    <td>Sản phẩm</td>
+                    <td>Giá bán</td>
+                    <td>Số lượng</td>
+                    <td>Tạm tính</td>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                @foreach (var item in Model.listOrderItem)
+                {
+                    <tr>
+                        <td>@item.ProductName</td>
+                        <td>@item.LastPrice.GetValueOrDefault().labelFormatCurrency()</td>
+                        <td>@item.Quantity</td>
+                        <td>@((item.LastPrice.GetValueOrDefault() * item.Quantity).labelFormatCurrency())</td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="bold font-montserrat text-uppercase" style="text-align:right" colspan="3">Tổng tiền:</td>
+                    <td class="bold font-montserrat text-uppercase">@Model.order.TotalAmount.GetValueOrDefault().labelFormatCurrency()</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>

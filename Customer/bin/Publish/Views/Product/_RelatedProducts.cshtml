@@ -1,0 +1,60 @@
+﻿@using Common
+@model List<Services.Models.Product>
+@{
+    var imgPath = Customers.Ultilities.Constant.AdminAddress;
+ }
+<div class="carousel-button">
+    <a id="prev_related" class="prev nav_thumb" href="javascript:void(0)" style="display:block;" title="prev"><i data-original-title="Previous" title="" class="fa fa-angle-left btooltip">&nbsp;</i></a>
+    <a id="next_related" class="next nav_thumb" href="javascript:void(0)" style="display:block;" title="next"><i data-original-title="Next" title="" class="fa fa-angle-right btooltip">&nbsp;</i></a>
+</div>
+<div class="list_carousel responsive">
+    <ul id="product_related" class="content-products">
+        @foreach (var item in Model)
+        {
+            <li>
+                <div class="product-thumb transition">
+                    <div class="image"><a href="/Product/Detail/@item.Id"><img src="@imgPath@item.Avatar" alt="@item.Name" class="img-responsive" /></a></div>
+                    <div class="small_detail">
+                        <div class="caption">
+                            <div class="name"><a href="/Product/Detail/@item.Id">@item.Name</a></div>
+                            <p class="description">
+                                @item.Description
+                            </p>
+                            <div class="rating">
+                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                            </div>
+                            <p class="price">
+                                @if (item.SaleOff > 0)
+                                {
+                                    if (item.StartDate != null && item.EndDate != null && DateTime.Now >= item.StartDate && DateTime.Now <= item.EndDate)
+                                    {
+                                        <span class="price-new">@item.SaleOff.labelFormatCurrency()</span>
+                                        <span class="price-old">@item.Price.labelFormatCurrency()</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="price-new">@item.Price.labelFormatCurrency()</span>
+                                    }
+                                }
+                                else
+                                {
+                                    <span class="price-new">@item.Price.labelFormatCurrency()</span>
+                                }
+                            </p>
+                        </div>
+                        <div class="button-group bt-button-group">
+                            <a href="#" class="btn-cart">Add to Cart</a>
+                            <a class="btn-wishlist" title="Add to Wish List" href="#"><i class="fa fa-heart"></i></a>
+                            <a class="btn-compare" title="Compare this Product" href="#"><i class="fa fa-retweet"></i></a>
+                            <button title="Quick View" class="sft_quickshop_icon"><span class="qs_icon"><i class="fa fa-search"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        }
+    </ul>
+</div>

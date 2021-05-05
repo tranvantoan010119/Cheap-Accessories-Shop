@@ -1,0 +1,48 @@
+﻿@model Services.ViewModels.CustomerViewModel
+@{
+    ViewBag.Title = "UpdateInfo";
+}
+
+<!-- End #bt_header -->
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+        <li><a href="pages/account.html">Account</a></li>
+    </ul>
+    <div class="row">
+        @Html.Partial("/Views/Account/LeftSide.cshtml")
+        <div id="content" class="col-sm-9">
+            <div class="row">
+                <div class="col-sm-8 col-xs-12">
+                    <div class="update-content">
+                        <h3>Thông tin cá nhân</h3>
+                        <p>cập nhật thông tin cá nhân giúp mua hàng tiện lợi hơn.</p>
+                        <form action="/Account/UpdateInfo" method="post">
+                            <input type="hidden" name="url" id="url" value="@Request.QueryString["url"]"/>
+                            @Html.HiddenFor(m=>m.GuidId)
+                            <div class="form-group">
+                                <label class="control-label" for="input-email">E-Mail</label>
+                                @Html.TextBoxFor(m=>m.Email,new { @class= "form-control",@readonly= "readonly" })
+                                @*<input type="text" name="Email" value="" placeholder="E-Mail" id="input-email" class="form-control" />*@
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="input-password">Họ &amp; Tên</label>
+                                @Html.TextBoxFor(m => m.FullName, new { @class = "form-control" })
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="input-password">Số điện thoại</label>
+                                @Html.TextBoxFor(m => m.PhoneNo, new { @class = "form-control"})
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="input-password">Địa chỉ</label>
+                                @Html.TextBoxFor(m => m.Address, new { @class = "form-control"})
+                            </div>
+                            <input type="submit" value="Lưu" class="btn btn-primary" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->

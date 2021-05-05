@@ -1,0 +1,140 @@
+﻿@using Customers.Ultilities
+@using Common
+@model IEnumerable<Services.Models.News>
+@{
+    ViewBag.Title = "Index";
+    string url = "/News/Index?keyword="+ ViewBag.keyword +"&page=";
+}
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="/"><i class="fa fa-home"></i></a></li>
+        <li><a href="#">Tin tức</a></li>
+    </ul>
+    <div class="row">
+        <div id="column-left" class="col-sm-3 hidden-xs">
+            @Html.Partial("/Views/News/LeftSide.cshtml")
+        </div>
+        <div id="content" class="col-sm-9">
+            <div class="product-filter blog">
+                <div class="boss-list-grid hidden-xs">
+                    <button type="button" id="grid-view" class="btn-grid" title="Grid"><i class="fa fa-th"></i></button>
+                    <button type="button" id="list-view" class="btn-list" title="List"><i class="fa fa-th-list"></i></button>
+                </div>
+                <div class="boss-limit-sort hidden-xs">
+                    <div class="box_sort">
+                        <label class="control-label" for="input-sort">Sort By:</label>
+                        <label>
+                            <select id="input-sort" class="form-control selectpicker col-sm-3">
+                                <option value="pages/bossblog.html" selected="selected">Default</option>
+                                <option value="pages/bossblog.html">Name (A - Z)</option>
+                                <option value="pages/bossblog.html">Name (Z - A)</option>
+                                <option value="pages/bossblog.html">Date Added (Old &gt; New)</option>
+                                <option value="pages/bossblog.html">Date Added (New &gt; Old)</option>
+                                <option value="pages/bossblog.html">Comment (Highest)</option>
+                                <option value="pages/bossblog.html">Comment (Lowest)</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="product-layout product-list col-xs-12">
+                        <div class="product-thumb product-thumb-block">
+                            <div class="image"><a href="/News/Detail?id=@item.Id"><img src="@Constant.AdminAddress@item.Avatar" alt="@item.Title" title="@item.Title" class="img-responsive" /></a></div>
+                            <div class="caption">
+                                <div class="article-name"><a href="/News/Detail?id=@item.Id"> @item.Title</a></div>
+                                <div class="time-stamp">
+                                    <small>@item.CreatedDate.Value.convertDateToString()</small>
+                                </div>
+                                <div class="article-content">@item.Description</div>
+                                <div class="article-footer">
+                                    <span class="post-by">Người đăng: <span>Admin</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            @if (ViewBag.totalPage > 1)
+            {
+                <div class="result-pagination">
+                    <div class="results pull-left">Showing @((ViewBag.pageSize * (ViewBag.page - 1)) + 1) to @((ViewBag.pageSize * ViewBag.page) < ViewBag.totalRow ? (ViewBag.pageSize * ViewBag.page) : ViewBag.totalRow) of @ViewBag.totalRow (@ViewBag.totalPage Pages)</div>
+                    <div class="links pull-right">
+                        <ul class="pagination">
+                            @if (ViewBag.page >= 3)
+                            {
+                                <li><a href="@(url)1">|&lt;</a></li>
+                            }
+                            @for (int i = ViewBag.page - 1; i <= ViewBag.page + 1; i++)
+                            {
+                                if (i <= 0)
+                                {
+                                    continue;
+                                }
+
+                                if (i > ViewBag.totalPage)
+                                {
+                                    break;
+                                }
+
+                                if (ViewBag.page == i)
+                                {
+                                    <li class="active"><span>@i</span></li>
+                                }
+                                else
+                                {
+                                    <li><a href="@url@i">@i</a></li>
+                                }
+                            }
+                            @if (ViewBag.page < ViewBag.totalPage - 1)
+                            {
+                                <li><a href="@url@ViewBag.totalPage">&gt;|</a></li>
+                            }
+                        </ul>
+
+                        @*<ul class="pagination">
+                                <li class="active"><span>1</span></li>
+                                <li><a href="pages/search.html">2</a></li>
+                                <li><a href="pages/search&amp;search=a&amp;page=2">&gt;</a></li>
+                                <li><a href="pages/search.html">&gt;|</a></li>
+                            </ul>*@
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+<!--
+// Product List
+	$('#list-view').click(function() {
+		$('#content .product-layout > .clearfix').remove();
+		$('#content .product-layout').attr('class', 'product-layout product-list col-xs-12');
+		localStorage.setItem('display', 'list');
+	});
+	// Product Grid
+	$('#grid-view').click(function() {
+		$('#content .product-layout > .clearfix').remove();
+		// What a shame bootstrap does not take into account dynamically loaded columns
+		cols = $('#column-right, #column-left').length;
+		if (cols == 2) {
+			$('#content .product-layout').attr('class', 'product-layout product-grid col-lg-6 col-md-6 col-sm-12 col-xs-12');
+			$('#content .product-layout:nth-child(2)').after('<div class="clearfix visible-md visible-sm"></div>');
+		} else if (cols == 1) {
+			$('#content .product-layout').attr('class', 'product-layout product-grid col-lg-4 col-md-4 col-sm-6 col-xs-12');
+			$('#content .product-layout:nth-child(3)').after('<div class="clearfix visible-lg"></div>');
+		} else {
+			$('#content .product-layout').attr('class', 'product-layout product-grid col-lg-3 col-md-3 col-sm-6 col-xs-12');
+			$('#content .product-layout:nth-child(4)').after('<div class="clearfix"></div>');
+		}
+		 localStorage.setItem('display', 'grid');
+	});
+	if (localStorage.getItem('display') == 'list') {
+		$('#list-view').trigger('click');
+	} else {
+					$('#grid-view').trigger('click');
+					}
+//--></script>

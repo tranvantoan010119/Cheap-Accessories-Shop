@@ -1,0 +1,153 @@
+﻿
+@{
+    ViewBag.Title = "Order_Statistics";
+}
+
+
+<style>
+    .flot-x-axis .flot-tick-label {
+    white-space: nowrap;
+    transform: translate(-9px, 0) rotate(-60deg);
+    text-indent: -100%;
+    transform-origin: top right;
+    text-align: right !important;
+
+}
+</style>
+
+@section currentNavBar{
+    <li>
+        <a href="/Order" class="active">Đơn hàng</a>
+    </li>
+    <li>
+        <a href="#" class="active">Thống kê</a>
+    </li>
+}
+
+<div class="container-fluid container-fixed-lg">
+    <div class="panel panel-transparent">
+        <div class="panel-heading">
+            <div class="panel-title">
+                Thống kê đơn hàng
+            </div>
+            <div class="export-options-container pull-right"></div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="form-group col-md-2">
+                    <label>Thống kê theo:</label>
+                    <select style="padding-bottom:0;padding-top:0;" class="form-control" name="optStatistics" id="optStatistics">
+                        <option value="0">--- Chọn ---</option>
+                        <option value="1">Ngày</option>
+                        @*<option value="2">Tháng</option>*@
+                    </select>
+                </div>
+            </div>
+            <div class="row hide" id="StatisticsByDay">
+                <div class="col-md-4">
+                    <label>Từ ngày</label>
+                    <div id="datepicker-component" class="input-group date col-sm-8">
+                        <input type="text" class="form-control" id="fromDay"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label>Đến ngày</label>
+                    <div id="datepicker-component" class="input-group date col-sm-8">
+                        <input type="text" class="form-control" id="toDay"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                    </div>
+                </div>
+                <div class="form-group col-md-2">
+                    <label>Thống kê</label>
+                    <span id="btnStatisticsByDay" class="form-control input-group-addon" style="border-left:1px solid rgba(0,0,0,0.07);color:rgba(98,98,98,0.9);">
+                        <i class="pg-search"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="row hide" id="StatisticsByMonth">
+                <div class="col-md-4">
+                    <label>Từ tháng</label>
+                    <div id="datepicker-component" class="input-group date col-sm-8">
+                        <input type="text" class="form-control" id="fromMonth"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label>Đến tháng</label>
+                    <div id="datepicker-component" class="input-group date col-sm-8">
+                        <input type="text" class="form-control" id="toMonth"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                    </div>
+                </div>
+                <div class="form-group col-md-2">
+                    <label>Thống kê</label>
+                    <span id="btnStatisticsByMonth" class="form-control input-group-addon" style="border-left:1px solid rgba(0,0,0,0.07);color:rgba(98,98,98,0.9);">
+                        <i class="pg-search"></i>
+                    </span>
+                </div>
+            </div>
+            <div id="content" class="hide">
+                <div class="demo-container">
+                    <div id="placeholder" class="demo-placeholder"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts{
+    <script src="~/Assets/Template/assets/js/form_elements.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#optStatistics').off('change').on('change', function (e) {
+                var value = $(this).val();
+                if (value == 1) {
+                    $('#StatisticsByDay').removeClass("hide");
+                    $('#StatisticsByMonth').addClass("hide");
+                }
+                else if (value == 2) {
+                    $('#StatisticsByDay').addClass("hide");
+                    $('#StatisticsByMonth').removeClass("hide");
+                }
+            });
+
+            $('#btnStatisticsByDay').off('click').on('click', function (e) {
+                e.preventDefault();
+                var fromDate = $('#fromDay').val();
+                var toDate = $('#toDay').val();
+                $.ajax({
+                    url: _mainConfig.relativePath + '/Order/Order_Statistics_ByDay',
+                    type: 'post',
+                    data: { fromDate: fromDate, toDate: toDate },
+                    success: function (res) {
+                        var data = [];
+
+
+                        $.each(res.data, function (i, item) {
+                            data.push([moment(res.data[i].date).format("DD/MM"), res.data[i].value]);
+                        });
+
+                        var d1 = [
+                        {
+                            "label": res.label,
+                            "data": data
+                        }];
+                        $('#content').removeClass('hide');
+                        $.plot("#placeholder", d1, {
+                            lines: {
+                                show: true
+                            },
+                            points: {
+                                show: true
+                            },
+                            xaxis: {
+                                mode: "categories",
+                                tickLength: 0
+                            }
+                        });
+                        
+                    }
+                });
+            });
+        });
+    </script>
+}
